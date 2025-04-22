@@ -10,10 +10,10 @@ Simulate a real-world home or small office network using pfSense to:
 
 Demonstrates an understanding of core networking, access control, and secure architecture.
 
-### Network Design
-[WAN] ------> [ pfSense ]
-                 | (LAN 1 - 192.168.10.0/24)
-                 |----> Ubuntu Server
-                 |
-                 | (LAN 2 - 192.168.20.0/24)
-                 |----> Windows 10
+### Network Design                                                                                                                                                   
+[WAN] ------> [ pfSense ]                                                                                                                                                   
+                 | (LAN 1 - 192.168.10.0/24)                                                                                                                                                   
+                 |----> Ubuntu Server                                                                                                                                                   
+                 |                                                                                                                                                   
+                 | (LAN 2 - 192.168.20.0/24)                                                                                                                                                   
+                 |----> Windows 10                                                                                                                                                   
