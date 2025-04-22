@@ -17,3 +17,25 @@ Demonstrates an understanding of core networking, access control, and secure arc
                  |                                                                                                                                                   
                  | (LAN 2 - 192.168.20.0/24)                                                                                                                                                   
                  |----> Windows 10                                                                                                                                                   
+
+### Folder Structure
+pfsense-homelab/
+│
+├── README.md
+├── network-diagram.png
+├── firewall-rules/
+│   ├── lan1-to-lan2.txt
+│   └── block-untrusted-subnet.md
+├── configurations/
+│   ├── dhcp-config.txt
+│   ├── dns-setup.md
+│   └── pfsense-backup.xml (optional export from GUI)
+├── packet-captures/
+│   ├── lan2-blocked-icmp.pcapng
+│   └── lan1-http-allowed.pcapng
+├── screenshots/
+│   ├── pfsense-firewall-rules.png
+│   └── network-interface-config.png
+└── documentation/
+    ├── design-notes.md
+    └── traffic-analysis-report.md
