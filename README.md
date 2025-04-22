@@ -9,11 +9,6 @@ Simulate a real-world home or small office network using pfSense to:
 • Monitor and analyze traffic flows with tools like Wireshark                                                                                                                                                   
 
 Demonstrates an understanding of core networking, access control, and secure architecture.                                                                                                                                                   
-                                                                                                                                                   
-# pfSense Home Lab – Network Segmentation & Firewall Rules
-
-## 📌 Objective
-This lab demonstrates a secure home/small-office network built using pfSense. It includes multiple internal LANs, firewall rules for network segmentation, and basic services like DNS and DHCP.
 
 ## 🧱 Network Design
 ![Network Diagram](./network-diagram.png)
