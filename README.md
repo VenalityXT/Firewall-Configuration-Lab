@@ -10,7 +10,7 @@ Simulate a real-world home or small office network using pfSense to:
 
 Demonstrates an understanding of core networking, access control, and secure architecture.                                                                                                                                                   
 
-## 🧱 Network Design
+## Network Design
 ![Network Diagram](./network-diagram.png)
 
 - LAN 1: 192.168.10.0/24 (Trusted - Internal Servers)
@@ -30,7 +30,7 @@ Demonstrates an understanding of core networking, access control, and secure arc
 - DHCP and DNS setup
 - Packet capture and traffic inspection
 
-## 📁 Repo Structure
+## Repo Structure
 - `/firewall-rules`: Text-based copies of firewall configs and rationale
 - `/configurations`: DHCP, DNS, and pfSense config snippets
 - `/packet-captures`: Wireshark files (.pcapng) to analyze blocked/allowed traffic
