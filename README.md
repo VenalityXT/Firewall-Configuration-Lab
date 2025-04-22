@@ -1,6 +1,6 @@
 # pfSense Home Lab - Network Segmentation Firewall Rules
 
-## 🎯 Project Goal
+### 🎯 Project Goal
 Simulate a real-world home or small office network using pfSense to:
 
 • Implement network segmentation using VLANs or subnetting                                                                                                                                                                                         
@@ -9,3 +9,11 @@ Simulate a real-world home or small office network using pfSense to:
 • Monitor and analyze traffic flows with tools like Wireshark                                                                                                                                                   
 
 Demonstrates an understanding of core networking, access control, and secure architecture.
+
+### Network Design
+[WAN] ------> [ pfSense ]
+                 | (LAN 1 - 192.168.10.0/24)
+                 |----> Ubuntu Server
+                 |
+                 | (LAN 2 - 192.168.20.0/24)
+                 |----> Windows 10
