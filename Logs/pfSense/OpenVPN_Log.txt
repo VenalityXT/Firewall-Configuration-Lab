@@ -1,0 +1,510 @@
+Time			Process		PID	Message		
+----------		-------		-----	-------
+Apr 22 21:40:10 	openvpn 	53268 	Consider setting groups/curves preference with tls-groups instead of forcing a specific curve with ecdh-curve.
+Apr 22 21:40:10 	openvpn 	53268 	Note: --data-cipher-fallback with cipher 'AES-128-CBC' disables data channel offload.
+Apr 22 21:40:10 	openvpn 	53268 	OpenVPN 2.6.8 amd64-portbld-freebsd14.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] [DCO]
+Apr 22 21:40:10 	openvpn 	53268 	library versions: OpenSSL 3.0.12 24 Oct 2023, LZO 2.10
+Apr 22 21:40:10 	openvpn 	53268 	DCO version: FreeBSD 14.0-CURRENT amd64 1400094 #1 RELENG_2_7_2-n255948-8d2b56da39c: Wed Dec 6 20:45:47 UTC 2023 root@freebsd:/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/obj/amd64/StdASW5b/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/sources/F
+Apr 22 21:40:10 	openvpn 	53304 	MANAGEMENT: unix domain socket listening on /var/etc/openvpn/server1/sock
+Apr 22 21:40:10 	openvpn 	53304 	NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Apr 22 21:40:10 	openvpn 	53304 	PLUGIN_INIT: POST /usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so '[/usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so] [/usr/local/sbin/ovpn_auth_verify_async] [user] [TG9jYWwgRGF0YWJhc2U=] [true] [server1] [1194]' intercepted=PLUGIN_AUTH_USER_PASS_VERIFY
+Apr 22 21:40:10 	openvpn 	53304 	Diffie-Hellman initialized with 2048 bit key
+Apr 22 21:40:10 	openvpn 	53304 	WARNING: experimental option --capath /var/etc/openvpn/server1/ca
+Apr 22 21:40:10 	openvpn 	53304 	WARNING: OpenSSL 3.0+ builds do not support specifying an ECDH curve with --ecdh-curve, using default curves. Use --tls-groups to specify groups.
+Apr 22 21:40:10 	openvpn 	53304 	TUN/TAP device ovpns1 exists previously, keep at program end
+Apr 22 21:40:10 	openvpn 	53304 	TUN/TAP device /dev/tun1 opened
+Apr 22 21:40:10 	openvpn 	53304 	/sbin/ifconfig ovpns1 10.8.0.1/24 mtu 1500 up
+Apr 22 21:40:10 	openvpn 	53304 	/usr/local/sbin/ovpn-linkup ovpns1 1500 0 10.8.0.1 255.255.255.0 init
+Apr 22 21:40:10 	openvpn 	53304 	Socket Buffers: R=[42080->42080] S=[57344->57344]
+Apr 22 21:40:10 	openvpn 	53304 	UDPv4 link local (bound): [AF_INET]10.0.2.15:1194
+Apr 22 21:40:10 	openvpn 	53304 	UDPv4 link remote: [AF_UNSPEC]
+Apr 22 21:40:10 	openvpn 	53304 	MULTI: multi_init called, r=256 v=256
+Apr 22 21:40:10 	openvpn 	53304 	IFCONFIG POOL IPv4: base=10.8.0.2 size=253
+Apr 22 21:40:10 	openvpn 	53304 	Initialization Sequence Completed
+Apr 22 21:40:30 	openvpn 	53304 	event_wait : Interrupted system call (fd=-1,code=4)
+Apr 22 21:40:32 	openvpn 	53304 	Closing TUN/TAP interface
+Apr 22 21:40:32 	openvpn 	53304 	/sbin/ifconfig ovpns1 10.8.0.1 -alias
+Apr 22 21:40:32 	openvpn 	53304 	/usr/local/sbin/ovpn-linkdown ovpns1 1500 0 10.8.0.1 255.255.255.0 init
+Apr 22 21:40:32 	openvpn 	89319 	Flushing states on OpenVPN interface ovpns1 (Link Down)
+Apr 22 21:40:32 	openvpn 	53304 	PLUGIN_CLOSE: /usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so
+Apr 22 21:40:32 	openvpn 	53304 	SIGTERM[hard,] received, process exiting
+Apr 22 21:40:32 	openvpn 	6133 	Consider setting groups/curves preference with tls-groups instead of forcing a specific curve with ecdh-curve.
+Apr 22 21:40:32 	openvpn 	6133 	Note: --data-cipher-fallback with cipher 'AES-128-CBC' disables data channel offload.
+Apr 22 21:40:32 	openvpn 	6133 	OpenVPN 2.6.8 amd64-portbld-freebsd14.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] [DCO]
+Apr 22 21:40:32 	openvpn 	6133 	library versions: OpenSSL 3.0.12 24 Oct 2023, LZO 2.10
+Apr 22 21:40:32 	openvpn 	6133 	DCO version: FreeBSD 14.0-CURRENT amd64 1400094 #1 RELENG_2_7_2-n255948-8d2b56da39c: Wed Dec 6 20:45:47 UTC 2023 root@freebsd:/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/obj/amd64/StdASW5b/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/sources/F
+Apr 22 21:40:32 	openvpn 	6477 	MANAGEMENT: unix domain socket listening on /var/etc/openvpn/server1/sock
+Apr 22 21:40:32 	openvpn 	6477 	NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Apr 22 21:40:32 	openvpn 	6477 	PLUGIN_INIT: POST /usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so '[/usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so] [/usr/local/sbin/ovpn_auth_verify_async] [user] [TG9jYWwgRGF0YWJhc2U=] [true] [server1] [1194]' intercepted=PLUGIN_AUTH_USER_PASS_VERIFY
+Apr 22 21:40:32 	openvpn 	6477 	Diffie-Hellman initialized with 2048 bit key
+Apr 22 21:40:32 	openvpn 	6477 	WARNING: experimental option --capath /var/etc/openvpn/server1/ca
+Apr 22 21:40:32 	openvpn 	6477 	WARNING: OpenSSL 3.0+ builds do not support specifying an ECDH curve with --ecdh-curve, using default curves. Use --tls-groups to specify groups.
+Apr 22 21:40:32 	openvpn 	6477 	TUN/TAP device ovpns1 exists previously, keep at program end
+Apr 22 21:40:32 	openvpn 	6477 	TUN/TAP device /dev/tun1 opened
+Apr 22 21:40:32 	openvpn 	6477 	/sbin/ifconfig ovpns1 10.8.0.1/24 mtu 1500 up
+Apr 22 21:40:32 	openvpn 	6477 	/usr/local/sbin/ovpn-linkup ovpns1 1500 0 10.8.0.1 255.255.255.0 init
+Apr 22 21:40:32 	openvpn 	6477 	Socket Buffers: R=[42080->42080] S=[57344->57344]
+Apr 22 21:40:32 	openvpn 	6477 	UDPv4 link local (bound): [AF_INET]10.0.2.15:1194
+Apr 22 21:40:32 	openvpn 	6477 	UDPv4 link remote: [AF_UNSPEC]
+Apr 22 21:40:32 	openvpn 	6477 	MULTI: multi_init called, r=256 v=256
+Apr 22 21:40:32 	openvpn 	6477 	IFCONFIG POOL IPv4: base=10.8.0.2 size=253
+Apr 22 21:40:32 	openvpn 	6477 	Initialization Sequence Completed
+Apr 22 21:42:27 	openvpn 	6477 	event_wait : Interrupted system call (fd=-1,code=4)
+Apr 22 21:42:29 	openvpn 	6477 	Closing TUN/TAP interface
+Apr 22 21:42:29 	openvpn 	6477 	/sbin/ifconfig ovpns1 10.8.0.1 -alias
+Apr 22 21:42:29 	openvpn 	6477 	/usr/local/sbin/ovpn-linkdown ovpns1 1500 0 10.8.0.1 255.255.255.0 init
+Apr 22 21:42:29 	openvpn 	56778 	Flushing states on OpenVPN interface ovpns1 (Link Down)
+Apr 22 21:42:29 	openvpn 	6477 	PLUGIN_CLOSE: /usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so
+Apr 22 21:42:29 	openvpn 	6477 	SIGTERM[hard,] received, process exiting
+Apr 22 21:42:29 	openvpn 	71986 	Consider setting groups/curves preference with tls-groups instead of forcing a specific curve with ecdh-curve.
+Apr 22 21:42:29 	openvpn 	71986 	Note: --data-cipher-fallback with cipher 'AES-128-CBC' disables data channel offload.
+Apr 22 21:42:29 	openvpn 	71986 	OpenVPN 2.6.8 amd64-portbld-freebsd14.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] [DCO]
+Apr 22 21:42:29 	openvpn 	71986 	library versions: OpenSSL 3.0.12 24 Oct 2023, LZO 2.10
+Apr 22 21:42:29 	openvpn 	71986 	DCO version: FreeBSD 14.0-CURRENT amd64 1400094 #1 RELENG_2_7_2-n255948-8d2b56da39c: Wed Dec 6 20:45:47 UTC 2023 root@freebsd:/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/obj/amd64/StdASW5b/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/sources/F
+Apr 22 21:42:29 	openvpn 	72270 	MANAGEMENT: unix domain socket listening on /var/etc/openvpn/server1/sock
+Apr 22 21:42:29 	openvpn 	72270 	NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Apr 22 21:42:29 	openvpn 	72270 	PLUGIN_INIT: POST /usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so '[/usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so] [/usr/local/sbin/ovpn_auth_verify_async] [user] [TG9jYWwgRGF0YWJhc2U=] [true] [server1] [1194]' intercepted=PLUGIN_AUTH_USER_PASS_VERIFY
+Apr 22 21:42:29 	openvpn 	72270 	Diffie-Hellman initialized with 2048 bit key
+Apr 22 21:42:29 	openvpn 	72270 	WARNING: experimental option --capath /var/etc/openvpn/server1/ca
+Apr 22 21:42:29 	openvpn 	72270 	WARNING: OpenSSL 3.0+ builds do not support specifying an ECDH curve with --ecdh-curve, using default curves. Use --tls-groups to specify groups.
+Apr 22 21:42:29 	openvpn 	72270 	TUN/TAP device ovpns1 exists previously, keep at program end
+Apr 22 21:42:29 	openvpn 	72270 	TUN/TAP device /dev/tun1 opened
+Apr 22 21:42:29 	openvpn 	72270 	/sbin/ifconfig ovpns1 10.8.0.1/24 mtu 1500 up
+Apr 22 21:42:29 	openvpn 	72270 	/usr/local/sbin/ovpn-linkup ovpns1 1500 0 10.8.0.1 255.255.255.0 init
+Apr 22 21:42:29 	openvpn 	72270 	Socket Buffers: R=[42080->42080] S=[57344->57344]
+Apr 22 21:42:29 	openvpn 	72270 	UDPv4 link local (bound): [AF_INET]10.0.2.15:1194
+Apr 22 21:42:29 	openvpn 	72270 	UDPv4 link remote: [AF_UNSPEC]
+Apr 22 21:42:29 	openvpn 	72270 	MULTI: multi_init called, r=256 v=256
+Apr 22 21:42:29 	openvpn 	72270 	IFCONFIG POOL IPv4: base=10.8.0.2 size=253
+Apr 22 21:42:29 	openvpn 	72270 	Initialization Sequence Completed
+2025-04-22 22:16:51.091478-04:00 	openvpn 	53854 	Consider setting groups/curves preference with tls-groups instead of forcing a specific curve with ecdh-curve.
+2025-04-22 22:16:51.095137-04:00 	openvpn 	53854 	Note: --data-cipher-fallback with cipher 'AES-128-CBC' disables data channel offload.
+2025-04-22 22:16:51.095223-04:00 	openvpn 	53854 	OpenVPN 2.6.8 amd64-portbld-freebsd14.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] [DCO]
+2025-04-22 22:16:51.095308-04:00 	openvpn 	53854 	library versions: OpenSSL 3.0.12 24 Oct 2023, LZO 2.10
+2025-04-22 22:16:51.095364-04:00 	openvpn 	53854 	DCO version: FreeBSD 14.0-CURRENT amd64 1400094 #1 RELENG_2_7_2-n255948-8d2b56da39c: Wed Dec 6 20:45:47 UTC 2023 root@freebsd:/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/obj/amd64/StdASW5b/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/sources/F
+2025-04-22 22:16:51.095865-04:00 	openvpn 	53942 	MANAGEMENT: unix domain socket listening on /var/etc/openvpn/server1/sock
+2025-04-22 22:16:51.096071-04:00 	openvpn 	53942 	GDG: problem writing to routing socket
+2025-04-22 22:16:51.096130-04:00 	openvpn 	53942 	NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2025-04-22 22:16:51.096179-04:00 	openvpn 	53942 	PLUGIN_INIT: POST /usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so '[/usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so] [/usr/local/sbin/ovpn_auth_verify_async] [user] [TG9jYWwgRGF0YWJhc2U=] [true] [server1] [1194]' intercepted=PLUGIN_AUTH_USER_PASS_VERIFY
+2025-04-22 22:16:51.097993-04:00 	openvpn 	53942 	Diffie-Hellman initialized with 2048 bit key
+2025-04-22 22:16:51.098915-04:00 	openvpn 	53942 	WARNING: experimental option --capath /var/etc/openvpn/server1/ca
+2025-04-22 22:16:51.099184-04:00 	openvpn 	53942 	WARNING: OpenSSL 3.0+ builds do not support specifying an ECDH curve with --ecdh-curve, using default curves. Use --tls-groups to specify groups.
+2025-04-22 22:16:51.099342-04:00 	openvpn 	53942 	TUN/TAP device ovpns1 exists previously, keep at program end
+2025-04-22 22:16:51.099573-04:00 	openvpn 	53942 	TUN/TAP device /dev/tun1 opened
+2025-04-22 22:16:51.099734-04:00 	openvpn 	53942 	/sbin/ifconfig ovpns1 10.8.0.1/24 mtu 1500 up
+2025-04-22 22:16:51.104830-04:00 	openvpn 	53942 	/usr/local/sbin/ovpn-linkup ovpns1 1500 0 10.8.0.1 255.255.255.0 init
+2025-04-22 22:16:51.118557-04:00 	openvpn 	53942 	Socket Buffers: R=[42080->42080] S=[57344->57344]
+2025-04-22 22:16:51.118648-04:00 	openvpn 	53942 	UDPv4 link local (bound): [AF_INET]10.0.2.15:1194
+2025-04-22 22:16:51.118661-04:00 	openvpn 	53942 	UDPv4 link remote: [AF_UNSPEC]
+2025-04-22 22:16:51.118693-04:00 	openvpn 	53942 	MULTI: multi_init called, r=256 v=256
+2025-04-22 22:16:51.118928-04:00 	openvpn 	53942 	IFCONFIG POOL IPv4: base=10.8.0.2 size=253
+2025-04-22 22:16:51.118994-04:00 	openvpn 	53942 	Initialization Sequence Completed
+2025-04-22 22:17:25.236286-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:17:25.447269-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:17:25.657519-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:17:25.657603-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:18:27.003063-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:18:27.220485-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:18:27.445235-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:18:27.446253-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:19:28.764117-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:19:28.980215-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:19:29.198561-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:19:29.198867-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:20:30.497194-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:20:30.727461-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:20:30.951656-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:20:30.952125-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:21:32.184847-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:21:32.402867-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:21:32.632708-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:21:32.633932-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:22:33.934252-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:22:34.154135-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:22:34.377872-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:22:34.380545-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:23:35.684521-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:23:35.899685-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:23:36.123754-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:23:36.124181-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:24:37.460142-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:24:37.679817-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:24:37.903017-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:24:37.903389-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:25:39.221237-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:25:39.440795-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:25:39.653350-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:25:39.653523-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:26:40.901684-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:26:41.121312-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:26:41.342402-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:26:41.342610-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:27:42.601619-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:27:42.821555-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:27:43.043071-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:27:43.043150-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:28:44.362842-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:28:44.580699-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:28:44.795267-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:28:44.795525-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:29:45.996157-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:29:46.220778-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:29:46.433860-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:29:46.434079-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:30:47.702717-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:30:47.919522-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:30:48.145257-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:30:48.146041-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:31:49.373394-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:31:49.589562-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:31:49.812247-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:31:49.812417-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:32:51.116947-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:32:51.342854-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:32:51.554212-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:32:51.554671-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:33:52.846683-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:33:53.062683-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:33:53.283899-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:33:53.284291-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:34:54.513312-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:34:54.729753-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:34:54.947384-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:34:54.947795-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:35:56.140953-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:35:56.359517-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:35:56.582374-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:35:56.582412-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:36:57.878113-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:36:58.100229-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:36:58.313397-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:36:58.313447-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:37:59.634230-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:37:59.839904-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:38:00.062464-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:38:00.062514-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:39:01.371732-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:39:01.590331-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:39:01.817085-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:39:01.818266-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:40:03.083644-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:40:03.300353-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:40:03.522427-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:40:03.522686-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:41:04.728061-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:41:04.949813-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:41:05.173266-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:41:05.173474-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:42:06.492556-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:42:06.709743-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:42:06.929937-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:42:06.929975-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:43:08.141540-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:43:08.357224-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:43:08.579269-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:43:08.579477-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:44:09.831555-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:44:10.044249-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:44:10.266272-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:44:10.266552-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:45:11.481543-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:45:11.700704-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:45:11.922670-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:45:11.922882-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:46:13.208696-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:46:13.430335-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:46:13.654188-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:46:13.658559-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:47:14.982619-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:47:15.201050-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:47:15.424108-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:47:15.425412-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-22 22:48:16.645199-04:00 	openvpn 	53942 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-22 22:48:16.860283-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'status 2'
+2025-04-22 22:48:17.074114-04:00 	openvpn 	53942 	MANAGEMENT: CMD 'quit'
+2025-04-22 22:48:17.074332-04:00 	openvpn 	53942 	MANAGEMENT: Client disconnected
+2025-04-23 03:10:00.307023-04:00 	openvpn 	31459 	Consider setting groups/curves preference with tls-groups instead of forcing a specific curve with ecdh-curve.
+2025-04-23 03:10:00.310143-04:00 	openvpn 	31459 	Note: --data-cipher-fallback with cipher 'AES-128-CBC' disables data channel offload.
+2025-04-23 03:10:00.310223-04:00 	openvpn 	31459 	OpenVPN 2.6.8 amd64-portbld-freebsd14.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] [DCO]
+2025-04-23 03:10:00.310289-04:00 	openvpn 	31459 	library versions: OpenSSL 3.0.12 24 Oct 2023, LZO 2.10
+2025-04-23 03:10:00.310358-04:00 	openvpn 	31459 	DCO version: FreeBSD 14.0-CURRENT amd64 1400094 #1 RELENG_2_7_2-n255948-8d2b56da39c: Wed Dec 6 20:45:47 UTC 2023 root@freebsd:/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/obj/amd64/StdASW5b/var/jenkins/workspace/pfSense-CE-snapshots-2_7_2-main/sources/F
+2025-04-23 03:10:00.311027-04:00 	openvpn 	31746 	MANAGEMENT: unix domain socket listening on /var/etc/openvpn/server1/sock
+2025-04-23 03:10:00.311292-04:00 	openvpn 	31746 	GDG: problem writing to routing socket
+2025-04-23 03:10:00.311345-04:00 	openvpn 	31746 	NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2025-04-23 03:10:00.311391-04:00 	openvpn 	31746 	PLUGIN_INIT: POST /usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so '[/usr/local/lib/openvpn/plugins/openvpn-plugin-auth-script.so] [/usr/local/sbin/ovpn_auth_verify_async] [user] [TG9jYWwgRGF0YWJhc2U=] [true] [server1] [1194]' intercepted=PLUGIN_AUTH_USER_PASS_VERIFY
+2025-04-23 03:10:00.314618-04:00 	openvpn 	31746 	Diffie-Hellman initialized with 2048 bit key
+2025-04-23 03:10:00.315094-04:00 	openvpn 	31746 	WARNING: experimental option --capath /var/etc/openvpn/server1/ca
+2025-04-23 03:10:00.315321-04:00 	openvpn 	31746 	WARNING: OpenSSL 3.0+ builds do not support specifying an ECDH curve with --ecdh-curve, using default curves. Use --tls-groups to specify groups.
+2025-04-23 03:10:00.315597-04:00 	openvpn 	31746 	TUN/TAP device ovpns1 exists previously, keep at program end
+2025-04-23 03:10:00.315792-04:00 	openvpn 	31746 	TUN/TAP device /dev/tun1 opened
+2025-04-23 03:10:00.315964-04:00 	openvpn 	31746 	/sbin/ifconfig ovpns1 10.8.0.1/24 mtu 1500 up
+2025-04-23 03:10:00.318891-04:00 	openvpn 	31746 	/usr/local/sbin/ovpn-linkup ovpns1 1500 0 10.8.0.1 255.255.255.0 init
+2025-04-23 03:10:00.327419-04:00 	openvpn 	31746 	Socket Buffers: R=[42080->42080] S=[57344->57344]
+2025-04-23 03:10:00.327486-04:00 	openvpn 	31746 	UDPv4 link local (bound): [AF_INET]10.0.2.15:1194
+2025-04-23 03:10:00.327530-04:00 	openvpn 	31746 	UDPv4 link remote: [AF_UNSPEC]
+2025-04-23 03:10:00.327594-04:00 	openvpn 	31746 	MULTI: multi_init called, r=256 v=256
+2025-04-23 03:10:00.327662-04:00 	openvpn 	31746 	IFCONFIG POOL IPv4: base=10.8.0.2 size=253
+2025-04-23 03:10:00.327723-04:00 	openvpn 	31746 	Initialization Sequence Completed
+2025-04-23 09:10:27.668797-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:10:28.102587-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:10:28.102691-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:11:29.876495-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:11:30.094897-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:11:30.319182-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:11:30.319803-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:12:31.548069-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:12:31.765473-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:12:31.987502-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:12:31.987805-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:13:33.261644-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:13:33.485532-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:13:33.699853-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:13:33.700386-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:14:35.022407-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:14:35.238722-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:14:35.461226-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:14:35.461608-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:15:36.698561-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:15:36.914615-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:15:37.138059-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:15:37.138348-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:16:38.364500-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:16:38.586860-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:16:38.808603-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:16:38.808993-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:17:40.108988-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:17:40.318213-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:17:40.542425-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:17:40.542577-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:18:29.864218-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:18:30.086975-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:18:30.299265-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:18:30.299529-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:19:31.610218-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:19:31.818954-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:19:32.042467-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:19:32.042522-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:20:33.291646-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:20:33.514540-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:20:33.738747-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:20:33.739549-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:21:34.993469-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:21:35.214326-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:21:35.428808-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:21:35.428888-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:22:36.707489-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:22:36.924675-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:22:37.147059-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:22:37.147109-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:23:38.474765-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:23:38.694625-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:23:38.917372-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:23:38.917654-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:24:40.263833-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:24:40.485685-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:24:40.698373-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:24:40.698751-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:25:42.065584-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:25:42.279897-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:25:42.504093-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:25:42.504172-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:26:43.860779-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:26:44.074355-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:26:44.296999-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:26:44.297200-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:27:45.637647-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:27:45.842460-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:27:46.067303-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:27:46.067481-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:28:47.403940-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:28:47.625309-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:28:47.849287-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:28:47.850362-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:29:49.152453-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:29:49.375285-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:29:49.599137-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:29:49.599412-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:30:50.909351-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:30:51.125910-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:30:51.345926-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:30:51.346124-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:31:52.656308-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:31:52.876983-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:31:53.087988-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:31:53.088194-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:32:54.366821-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:32:54.574355-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:32:54.798107-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:32:54.798306-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:33:56.058872-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:33:56.275282-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:33:56.498438-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:33:56.498662-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:34:57.719463-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:34:57.933193-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:34:58.156505-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:34:58.156579-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:35:59.432305-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:35:59.654760-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:35:59.865916-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:35:59.866125-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:37:01.220835-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:37:01.444748-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:37:01.658945-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:37:01.659212-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:38:02.902087-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:38:03.127008-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:38:03.349425-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:38:03.349695-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:39:04.641956-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:39:04.864956-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:39:05.087545-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:39:05.087774-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:40:06.324984-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:40:06.538918-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:40:06.762735-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:40:06.762811-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:41:08.032205-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:41:08.248535-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:41:08.471439-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:41:08.471510-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:42:09.717597-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:42:09.937653-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:42:10.149021-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:42:10.149601-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:43:11.443030-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:43:11.652845-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:43:11.870462-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:43:11.870868-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:44:13.287660-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:44:13.504395-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:44:13.727364-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:44:13.727652-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:45:15.096041-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:45:15.315078-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:45:15.538000-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:45:15.538233-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:46:16.854687-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:46:17.075575-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:46:17.299065-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:46:17.299128-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:47:18.593017-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:47:18.823221-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:47:19.047462-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:47:19.047905-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:48:20.332864-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:48:20.555848-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:48:20.773464-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:48:20.774013-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:49:22.038883-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:49:22.254542-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:49:22.478271-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:49:22.478492-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:50:23.807033-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:50:24.016596-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:50:24.239093-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:50:24.239504-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:51:25.519713-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:51:25.734066-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:51:25.956838-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:51:25.956991-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:52:27.255319-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:52:27.476036-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:52:27.699365-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:52:27.699833-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:53:29.056739-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:53:29.271681-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:53:29.494937-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:53:29.495352-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:54:30.753393-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:54:30.974861-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:54:31.198667-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:54:31.198987-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:55:32.500154-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:55:32.715641-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:55:32.931760-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:55:32.931798-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:56:34.264465-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:56:34.486052-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:56:34.709226-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:56:34.710256-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:57:35.958338-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:57:36.167999-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:57:36.389363-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:57:36.389551-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:58:37.720941-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:58:37.944358-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:58:38.167956-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:58:38.168043-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 09:59:39.504225-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 09:59:39.724728-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 09:59:39.938569-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 09:59:39.938635-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:00:41.154009-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:00:41.368134-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:00:41.590731-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:00:41.590957-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:01:42.909171-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:01:43.115153-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:01:43.338777-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:01:43.339081-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:02:44.645577-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:02:44.864329-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:02:45.074573-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:02:45.075173-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:03:46.346707-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:03:46.565389-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:03:46.778885-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:03:46.779440-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:04:48.085247-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:04:48.295447-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:04:48.512286-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:04:48.512668-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:05:49.859502-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:05:50.068463-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:05:50.291832-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:05:50.292065-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:06:51.590138-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:06:51.805290-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:06:52.028646-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:06:52.028887-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:07:53.339347-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:07:53.555874-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:07:53.778145-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:07:53.778545-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:08:55.022036-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:08:55.244465-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:08:55.466989-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:08:55.467038-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:09:56.806878-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:09:57.025348-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:09:57.248859-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:09:57.249077-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:10:58.572982-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:10:58.796249-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:10:59.010168-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:10:59.010168-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:12:00.397560-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:12:00.616448-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:12:00.838328-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:12:00.838391-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:13:02.105309-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:13:02.326112-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:13:02.548203-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:13:02.548522-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:14:03.859476-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:14:04.075850-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:14:04.298556-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:14:04.298911-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:15:05.582197-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:15:05.806252-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:15:06.018160-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:15:06.018574-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:16:07.323965-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:16:07.545585-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:16:07.754164-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:16:07.754208-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected
+2025-04-23 10:17:09.057006-04:00 	openvpn 	31746 	MANAGEMENT: Client connected from /var/etc/openvpn/server1/sock
+2025-04-23 10:17:09.276192-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'status 2'
+2025-04-23 10:17:09.498955-04:00 	openvpn 	31746 	MANAGEMENT: CMD 'quit'
+2025-04-23 10:17:09.499550-04:00 	openvpn 	31746 	MANAGEMENT: Client disconnected 

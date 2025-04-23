@@ -1,0 +1,30 @@
+Time					Process		PID	Message		
+----------				-------		-----	-------
+Apr 22 23:18:34 			login 		2441 	login on ttyv0 as root
+Apr 22 23:18:34 			sshguard 	5702 	Now monitoring attacks.
+Apr 22 23:24:56 			php-fpm 	399 	/index.php: webConfigurator authentication error for user 'admin' from: 192.168.1.100
+Apr 22 23:24:56 			sshguard 	5702 	Attack from "192.168.1.100" on service unknown service with danger 10.
+Apr 22 23:25:07 			php-fpm 	399 	/index.php: Successful login for user 'admin' from: 192.168.1.100 (Local Database)
+Apr 22 19:32:57 			login 		82477 	login on ttyv0 as root
+Apr 22 19:32:57 			sshguard 	86260 	Now monitoring attacks.
+Apr 22 19:34:32 			php-fpm 	396 	/index.php: Successful login for user 'admin' from: 10.10.10.10 (Local Database)
+Apr 22 21:07:00 			sshguard 	86260 	Exiting on signal.
+Apr 22 21:07:00 			sshguard 	7554 	Now monitoring attacks.
+Apr 22 21:46:00 			sshguard 	7554 	Exiting on signal.
+Apr 22 21:46:00 			sshguard 	21078 	Now monitoring attacks.
+2025-04-22 22:17:27.095266-04:00 	login 		16763 	login on ttyv0 as root
+2025-04-22 22:17:27.116420-04:00 	sshguard 	20489 	Now monitoring attacks.
+2025-04-22 22:17:40.400106-04:00 	php-fpm 	397 	/firewall_rules.php: Successful login for user 'admin' from: 10.10.10.10 (Local Database)
+2025-04-22 22:19:00.061325-04:00 	sshguard 	20489 	Exiting on signal.
+2025-04-22 22:19:00.066139-04:00 	sshguard 	47914 	Now monitoring attacks.
+2025-04-22 22:25:00.079814-04:00 	sshguard 	47914 	Exiting on signal.
+2025-04-22 22:25:00.084218-04:00 	sshguard 	15305 	Now monitoring attacks.
+2025-04-23 09:10:29.588409-04:00 	login 		33298 	login on ttyv0 as root
+2025-04-23 09:10:29.595940-04:00 	sshguard 	36225 	Now monitoring attacks.
+2025-04-23 09:10:55.556639-04:00 	php-fpm 	397 	/packages/cron/cron.php: Successful login for user 'admin' from: 10.10.10.10 (Local Database)
+2025-04-23 09:13:00.018154-04:00 	sshguard 	36225 	Exiting on signal.
+2025-04-23 09:13:00.022706-04:00 	sshguard 	34330 	Now monitoring attacks.
+2025-04-23 09:16:00.043289-04:00 	sshguard 	34330 	Exiting on signal.
+2025-04-23 09:16:00.049852-04:00 	sshguard 	96926 	Now monitoring attacks.
+2025-04-23 09:24:00.055370-04:00 	sshguard 	96926 	Exiting on signal.
+2025-04-23 09:24:00.061856-04:00 	sshguard 	28881 	Now monitoring attacks. 

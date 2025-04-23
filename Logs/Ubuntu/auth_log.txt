@@ -1,0 +1,376 @@
+2025-04-22T23:24:16.962939+00:00 ubuntu-core1 systemd-logind[1220]: New seat seat0.
+2025-04-22T23:24:16.964781+00:00 ubuntu-core1 systemd-logind[1220]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-04-22T23:24:16.964804+00:00 ubuntu-core1 systemd-logind[1220]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-04-22T23:24:16.965168+00:00 ubuntu-core1 systemd-logind[1220]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-04-22T23:24:17.028496+00:00 ubuntu-core1 polkitd[1198]: Loading rules from directory /etc/polkit-1/rules.d
+2025-04-22T23:24:17.029051+00:00 ubuntu-core1 polkitd[1198]: Loading rules from directory /run/polkit-1/rules.d
+2025-04-22T23:24:17.029063+00:00 ubuntu-core1 polkitd[1198]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-22T23:24:17.029071+00:00 ubuntu-core1 polkitd[1198]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-04-22T23:24:17.029080+00:00 ubuntu-core1 polkitd[1198]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-22T23:24:17.029089+00:00 ubuntu-core1 polkitd[1198]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-04-22T23:24:17.057845+00:00 ubuntu-core1 polkitd[1198]: Finished loading, compiling and executing 18 rules
+2025-04-22T23:24:17.060656+00:00 ubuntu-core1 polkitd[1198]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-04-22T23:24:18.658541+00:00 ubuntu-core1 useradd[1636]: new group: name=mguajardo606, GID=1000
+2025-04-22T23:24:18.658617+00:00 ubuntu-core1 useradd[1636]: new user: name=mguajardo606, UID=1000, GID=1000, home=/home/mguajardo606, shell=/bin/bash, from=none
+2025-04-22T23:24:18.659300+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to group 'adm'
+2025-04-22T23:24:18.659353+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to group 'cdrom'
+2025-04-22T23:24:18.659362+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to group 'sudo'
+2025-04-22T23:24:18.659369+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to group 'dip'
+2025-04-22T23:24:18.659377+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to group 'plugdev'
+2025-04-22T23:24:18.659384+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to group 'users'
+2025-04-22T23:24:18.659391+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to group 'lpadmin'
+2025-04-22T23:24:18.659405+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to shadow group 'adm'
+2025-04-22T23:24:18.659440+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to shadow group 'cdrom'
+2025-04-22T23:24:18.659449+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to shadow group 'sudo'
+2025-04-22T23:24:18.659456+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to shadow group 'dip'
+2025-04-22T23:24:18.659466+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to shadow group 'plugdev'
+2025-04-22T23:24:18.659499+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to shadow group 'users'
+2025-04-22T23:24:18.659511+00:00 ubuntu-core1 useradd[1636]: add 'mguajardo606' to shadow group 'lpadmin'
+2025-04-22T23:24:18.695009+00:00 ubuntu-core1 passwd[1644]: password for 'mguajardo606' changed by 'root'
+2025-04-22T23:24:18.707093+00:00 ubuntu-core1 passwd[1675]: password for 'root' changed by 'root'
+2025-04-22T23:24:20.023549+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-04-22T23:24:20.037185+00:00 ubuntu-core1 systemd-logind[1220]: New session c1 of user gdm.
+2025-04-22T23:24:20.120504+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=119) by gdm(uid=0)
+2025-04-22T23:24:20.122563+00:00 ubuntu-core1 systemd-logind[1220]: New session 1 of user gdm.
+2025-04-22T23:24:22.003496+00:00 ubuntu-core1 polkitd[1198]: Registered Authentication Agent for unix-session:c1 (system bus name :1.42 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-22T23:24:23.038519+00:00 ubuntu-core1 gnome-keyring-daemon[2356]: The Secret Service was already initialized
+2025-04-22T23:24:23.038833+00:00 ubuntu-core1 gnome-keyring-daemon[2355]: discover_other_daemon: 1
+2025-04-22T23:24:31.353786+00:00 ubuntu-core1 gdm-password]: gkr-pam: unable to locate daemon control file
+2025-04-22T23:24:31.354446+00:00 ubuntu-core1 gdm-password]: gkr-pam: stashed password to try later in open session
+2025-04-22T23:24:31.370348+00:00 ubuntu-core1 gdm-password]: pam_unix(gdm-password:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-22T23:24:31.389125+00:00 ubuntu-core1 systemd-logind[1220]: New session 2 of user mguajardo606.
+2025-04-22T23:24:31.441253+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-22T23:24:31.443003+00:00 ubuntu-core1 systemd-logind[1220]: New session 3 of user mguajardo606.
+2025-04-22T23:24:31.650088+00:00 ubuntu-core1 gdm-password]: gkr-pam: unlocked login keyring
+2025-04-22T23:24:32.130225+00:00 ubuntu-core1 gnome-keyring-daemon[2820]: discover_other_daemon: 1
+2025-04-22T23:24:32.130381+00:00 ubuntu-core1 gnome-keyring-daemon[2529]: The PKCS#11 component was already initialized
+2025-04-22T23:24:32.130449+00:00 ubuntu-core1 gnome-keyring-daemon[2529]: The Secret Service was already initialized
+2025-04-22T23:24:32.130459+00:00 ubuntu-core1 gnome-keyring-daemon[2829]: discover_other_daemon: 1
+2025-04-22T23:24:32.130726+00:00 ubuntu-core1 gnome-keyring-daemon[2825]: discover_other_daemon: 1
+2025-04-22T23:24:33.135590+00:00 ubuntu-core1 polkitd[1198]: Registered Authentication Agent for unix-session:2 (system bus name :1.90 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-22T23:24:34.465569+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-04-22T23:24:34.472181+00:00 ubuntu-core1 systemd-logind[1220]: Session c1 logged out. Waiting for processes to exit.
+2025-04-22T23:24:34.488368+00:00 ubuntu-core1 polkitd[1198]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.42, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-04-22T23:24:34.491391+00:00 ubuntu-core1 systemd-logind[1220]: Removed session c1.
+2025-04-22T23:24:44.771363+00:00 ubuntu-core1 (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-04-22T23:24:44.771549+00:00 ubuntu-core1 systemd-logind[1220]: Removed session 1.
+2025-04-22T23:25:01.884052+00:00 ubuntu-core1 CRON[4830]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-22T23:25:01.889932+00:00 ubuntu-core1 CRON[4830]: pam_unix(cron:session): session closed for user root
+2025-04-22T23:30:01.947449+00:00 ubuntu-core1 CRON[5020]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-22T23:30:01.949750+00:00 ubuntu-core1 CRON[5020]: pam_unix(cron:session): session closed for user root
+2025-04-22T23:33:24.444325+00:00 ubuntu-core1 systemd-logind[1220]: The system will reboot now!
+2025-04-22T23:33:24.487000+00:00 ubuntu-core1 systemd-logind[1220]: System is rebooting.
+2025-04-22T23:33:24.511234+00:00 ubuntu-core1 gdm-password]: pam_unix(gdm-password:session): session closed for user mguajardo606
+2025-04-22T23:33:24.573951+00:00 ubuntu-core1 systemd-logind[1220]: Session 2 logged out. Waiting for processes to exit.
+2025-04-22T23:33:31.966347+00:00 ubuntu-core1 systemd-logind[1101]: New seat seat0.
+2025-04-22T23:33:31.970172+00:00 ubuntu-core1 systemd-logind[1101]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-04-22T23:33:31.970243+00:00 ubuntu-core1 systemd-logind[1101]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-04-22T23:33:31.970654+00:00 ubuntu-core1 systemd-logind[1101]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-04-22T23:33:32.037612+00:00 ubuntu-core1 polkitd[1081]: Loading rules from directory /etc/polkit-1/rules.d
+2025-04-22T23:33:32.038438+00:00 ubuntu-core1 polkitd[1081]: Loading rules from directory /run/polkit-1/rules.d
+2025-04-22T23:33:32.038490+00:00 ubuntu-core1 polkitd[1081]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-22T23:33:32.038499+00:00 ubuntu-core1 polkitd[1081]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-04-22T23:33:32.038507+00:00 ubuntu-core1 polkitd[1081]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-22T23:33:32.038515+00:00 ubuntu-core1 polkitd[1081]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-04-22T23:33:32.072805+00:00 ubuntu-core1 polkitd[1081]: Finished loading, compiling and executing 18 rules
+2025-04-22T23:33:32.075087+00:00 ubuntu-core1 polkitd[1081]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-04-22T23:33:32.776113+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-04-22T23:33:32.788610+00:00 ubuntu-core1 systemd-logind[1101]: New session c1 of user gdm.
+2025-04-22T23:33:32.885985+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=119) by gdm(uid=0)
+2025-04-22T23:33:32.887972+00:00 ubuntu-core1 systemd-logind[1101]: New session 1 of user gdm.
+2025-04-22T23:33:34.759602+00:00 ubuntu-core1 polkitd[1081]: Registered Authentication Agent for unix-session:c1 (system bus name :1.37 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-22T23:33:35.647694+00:00 ubuntu-core1 gnome-keyring-daemon[1971]: The Secret Service was already initialized
+2025-04-22T23:33:35.647983+00:00 ubuntu-core1 gnome-keyring-daemon[1970]: discover_other_daemon: 1
+2025-04-22T23:33:45.810036+00:00 ubuntu-core1 gdm-password]: gkr-pam: unable to locate daemon control file
+2025-04-22T23:33:45.810137+00:00 ubuntu-core1 gdm-password]: gkr-pam: stashed password to try later in open session
+2025-04-22T23:33:45.837313+00:00 ubuntu-core1 gdm-password]: pam_unix(gdm-password:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-22T23:33:45.855358+00:00 ubuntu-core1 systemd-logind[1101]: New session 2 of user mguajardo606.
+2025-04-22T23:33:45.895810+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-22T23:33:45.900219+00:00 ubuntu-core1 systemd-logind[1101]: New session 3 of user mguajardo606.
+2025-04-22T23:33:46.186626+00:00 ubuntu-core1 gdm-password]: gkr-pam: unlocked login keyring
+2025-04-22T23:33:46.560915+00:00 ubuntu-core1 gnome-keyring-daemon[2252]: discover_other_daemon: 1
+2025-04-22T23:33:46.562331+00:00 ubuntu-core1 gnome-keyring-daemon[2010]: The PKCS#11 component was already initialized
+2025-04-22T23:33:46.562495+00:00 ubuntu-core1 gnome-keyring-daemon[2255]: discover_other_daemon: 1
+2025-04-22T23:33:46.565923+00:00 ubuntu-core1 gnome-keyring-daemon[2010]: The Secret Service was already initialized
+2025-04-22T23:33:46.566900+00:00 ubuntu-core1 gnome-keyring-daemon[2262]: discover_other_daemon: 1
+2025-04-22T23:33:47.648359+00:00 ubuntu-core1 polkitd[1081]: Registered Authentication Agent for unix-session:2 (system bus name :1.83 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-22T23:33:48.125410+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-04-22T23:33:48.136974+00:00 ubuntu-core1 systemd-logind[1101]: Session c1 logged out. Waiting for processes to exit.
+2025-04-22T23:33:48.149806+00:00 ubuntu-core1 polkitd[1081]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.37, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-04-22T23:33:48.153627+00:00 ubuntu-core1 systemd-logind[1101]: Removed session c1.
+2025-04-22T23:33:59.762951+00:00 ubuntu-core1 systemd-logind[1101]: Removed session 1.
+2025-04-22T23:35:01.676166+00:00 ubuntu-core1 CRON[4103]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-22T23:35:01.681161+00:00 ubuntu-core1 CRON[4103]: pam_unix(cron:session): session closed for user root
+2025-04-22T23:45:01.046200+00:00 ubuntu-core1 CRON[4739]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-22T23:45:01.051219+00:00 ubuntu-core1 CRON[4739]: pam_unix(cron:session): session closed for user root
+2025-04-22T23:55:02.176782+00:00 ubuntu-core1 CRON[4876]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-22T23:55:02.181182+00:00 ubuntu-core1 CRON[4876]: pam_unix(cron:session): session closed for user root
+2025-04-22T23:59:01.288351+00:00 ubuntu-core1 CRON[4949]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-22T23:59:01.293529+00:00 ubuntu-core1 CRON[4949]: pam_unix(cron:session): session closed for user root
+2025-04-22T23:59:47.784777+00:00 ubuntu-core1 systemd-logind[1101]: The system will reboot now!
+2025-04-22T23:59:47.843213+00:00 ubuntu-core1 systemd-logind[1101]: System is rebooting.
+2025-04-22T23:59:47.868758+00:00 ubuntu-core1 gdm-password]: pam_unix(gdm-password:session): session closed for user mguajardo606
+2025-04-22T23:59:54.448133+00:00 ubuntu-core1 systemd-logind[1097]: New seat seat0.
+2025-04-22T23:59:54.448135+00:00 ubuntu-core1 systemd-logind[1097]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-04-22T23:59:54.448136+00:00 ubuntu-core1 systemd-logind[1097]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-04-22T23:59:54.448143+00:00 ubuntu-core1 systemd-logind[1097]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-04-22T23:59:54.453868+00:00 ubuntu-core1 polkitd[1080]: Loading rules from directory /etc/polkit-1/rules.d
+2025-04-22T23:59:54.454160+00:00 ubuntu-core1 polkitd[1080]: Loading rules from directory /run/polkit-1/rules.d
+2025-04-22T23:59:54.454178+00:00 ubuntu-core1 polkitd[1080]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-22T23:59:54.454191+00:00 ubuntu-core1 polkitd[1080]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-04-22T23:59:54.454198+00:00 ubuntu-core1 polkitd[1080]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-22T23:59:54.454206+00:00 ubuntu-core1 polkitd[1080]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-04-22T23:59:54.501136+00:00 ubuntu-core1 polkitd[1080]: Finished loading, compiling and executing 18 rules
+2025-04-22T23:59:54.513807+00:00 ubuntu-core1 polkitd[1080]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-04-22T23:59:55.482363+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-04-22T23:59:55.537486+00:00 ubuntu-core1 systemd-logind[1097]: New session c1 of user gdm.
+2025-04-22T23:59:55.567111+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=119) by gdm(uid=0)
+2025-04-22T23:59:55.577423+00:00 ubuntu-core1 systemd-logind[1097]: New session 1 of user gdm.
+2025-04-22T23:59:58.102609+00:00 ubuntu-core1 polkitd[1080]: Registered Authentication Agent for unix-session:c1 (system bus name :1.39 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-22T23:59:59.191192+00:00 ubuntu-core1 gnome-keyring-daemon[1981]: The Secret Service was already initialized
+2025-04-22T23:59:59.191386+00:00 ubuntu-core1 gnome-keyring-daemon[1980]: discover_other_daemon: 1
+2025-04-23T00:00:11.860663+00:00 ubuntu-core1 gdm-password]: gkr-pam: unable to locate daemon control file
+2025-04-23T00:00:11.860743+00:00 ubuntu-core1 gdm-password]: gkr-pam: stashed password to try later in open session
+2025-04-23T00:00:11.877969+00:00 ubuntu-core1 gdm-password]: pam_unix(gdm-password:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-23T00:00:11.891112+00:00 ubuntu-core1 systemd-logind[1097]: New session 2 of user mguajardo606.
+2025-04-23T00:00:11.920630+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-23T00:00:11.933030+00:00 ubuntu-core1 systemd-logind[1097]: New session 3 of user mguajardo606.
+2025-04-23T00:00:12.133715+00:00 ubuntu-core1 gdm-password]: gkr-pam: unlocked login keyring
+2025-04-23T00:00:12.513526+00:00 ubuntu-core1 gnome-keyring-daemon[2116]: The PKCS#11 component was already initialized
+2025-04-23T00:00:12.514381+00:00 ubuntu-core1 gnome-keyring-daemon[2395]: discover_other_daemon: 1
+2025-04-23T00:00:12.527203+00:00 ubuntu-core1 gnome-keyring-daemon[2116]: The Secret Service was already initialized
+2025-04-23T00:00:12.528245+00:00 ubuntu-core1 gnome-keyring-daemon[2397]: discover_other_daemon: 1
+2025-04-23T00:00:12.528448+00:00 ubuntu-core1 gnome-keyring-daemon[2399]: discover_other_daemon: 1
+2025-04-23T00:00:13.525068+00:00 ubuntu-core1 polkitd[1080]: Registered Authentication Agent for unix-session:2 (system bus name :1.83 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-23T00:00:14.482030+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-04-23T00:00:14.496686+00:00 ubuntu-core1 systemd-logind[1097]: Session c1 logged out. Waiting for processes to exit.
+2025-04-23T00:00:14.497359+00:00 ubuntu-core1 polkitd[1080]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.39, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-04-23T00:00:14.499356+00:00 ubuntu-core1 systemd-logind[1097]: Removed session c1.
+2025-04-23T00:00:24.833451+00:00 ubuntu-core1 systemd-logind[1097]: Removed session 1.
+2025-04-23T00:00:24.834076+00:00 ubuntu-core1 (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-04-23T00:05:01.586914+00:00 ubuntu-core1 CRON[3336]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T00:05:01.592161+00:00 ubuntu-core1 CRON[3336]: pam_unix(cron:session): session closed for user root
+2025-04-23T00:15:01.653654+00:00 ubuntu-core1 CRON[4452]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T00:15:01.658564+00:00 ubuntu-core1 CRON[4452]: pam_unix(cron:session): session closed for user root
+2025-04-23T00:17:01.663159+00:00 ubuntu-core1 CRON[4527]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T00:17:01.672697+00:00 ubuntu-core1 CRON[4527]: pam_unix(cron:session): session closed for user root
+2025-04-23T00:21:20.070801+00:00 ubuntu-core1 dbus-daemon[1070]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-04-23T00:24:35.689697+00:00 ubuntu-core1 gdm-password]: gkr-pam: unlocked login keyring
+2025-04-23T00:25:01.776551+00:00 ubuntu-core1 CRON[4782]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T00:25:01.781389+00:00 ubuntu-core1 CRON[4782]: pam_unix(cron:session): session closed for user root
+2025-04-23T00:35:01.924447+00:00 ubuntu-core1 CRON[4994]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T00:35:01.929980+00:00 ubuntu-core1 CRON[4994]: pam_unix(cron:session): session closed for user root
+2025-04-23T00:45:01.960734+00:00 ubuntu-core1 CRON[5310]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T00:45:01.964824+00:00 ubuntu-core1 CRON[5310]: pam_unix(cron:session): session closed for user root
+2025-04-23T00:55:02.000216+00:00 ubuntu-core1 CRON[5602]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T00:55:02.005680+00:00 ubuntu-core1 CRON[5602]: pam_unix(cron:session): session closed for user root
+2025-04-23T01:05:01.017267+00:00 ubuntu-core1 CRON[6165]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T01:05:01.020974+00:00 ubuntu-core1 CRON[6165]: pam_unix(cron:session): session closed for user root
+2025-04-23T01:15:01.028960+00:00 ubuntu-core1 CRON[6716]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T01:15:01.033296+00:00 ubuntu-core1 CRON[6716]: pam_unix(cron:session): session closed for user root
+2025-04-23T01:17:01.039285+00:00 ubuntu-core1 CRON[6753]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T01:17:01.043061+00:00 ubuntu-core1 CRON[6753]: pam_unix(cron:session): session closed for user root
+2025-04-23T01:25:01.053125+00:00 ubuntu-core1 CRON[6836]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T01:25:01.060347+00:00 ubuntu-core1 CRON[6836]: pam_unix(cron:session): session closed for user root
+2025-04-23T01:35:01.072319+00:00 ubuntu-core1 CRON[6947]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T01:35:01.076293+00:00 ubuntu-core1 CRON[6947]: pam_unix(cron:session): session closed for user root
+2025-04-23T01:45:01.093182+00:00 ubuntu-core1 CRON[7072]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T01:45:01.099605+00:00 ubuntu-core1 CRON[7072]: pam_unix(cron:session): session closed for user root
+2025-04-23T01:55:01.107569+00:00 ubuntu-core1 CRON[7225]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T01:55:01.111636+00:00 ubuntu-core1 CRON[7225]: pam_unix(cron:session): session closed for user root
+2025-04-23T02:05:01.124525+00:00 ubuntu-core1 CRON[7347]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T02:05:01.128230+00:00 ubuntu-core1 CRON[7347]: pam_unix(cron:session): session closed for user root
+2025-04-23T02:06:23.506984+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt update
+2025-04-23T02:06:23.509340+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T02:09:10.219481+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T02:09:17.807861+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt install curl
+2025-04-23T02:09:17.808075+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T02:10:55.699057+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T02:15:01.193126+00:00 ubuntu-core1 CRON[7653]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T02:15:01.194684+00:00 ubuntu-core1 CRON[7653]: pam_unix(cron:session): session closed for user root
+2025-04-23T02:16:08.317281+00:00 ubuntu-core1 systemd-logind[1097]: The system will reboot now!
+2025-04-23T02:16:08.352431+00:00 ubuntu-core1 systemd-logind[1097]: System is rebooting.
+2025-04-23T02:16:08.389105+00:00 ubuntu-core1 gdm-password]: pam_unix(gdm-password:session): session closed for user mguajardo606
+2025-04-23T02:16:08.460058+00:00 ubuntu-core1 systemd-logind[1097]: Session 2 logged out. Waiting for processes to exit.
+2025-04-23T02:16:19.966508+00:00 ubuntu-core1 polkitd[1110]: Loading rules from directory /etc/polkit-1/rules.d
+2025-04-23T02:16:19.966509+00:00 ubuntu-core1 polkitd[1110]: Loading rules from directory /run/polkit-1/rules.d
+2025-04-23T02:16:19.966510+00:00 ubuntu-core1 polkitd[1110]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-23T02:16:19.966512+00:00 ubuntu-core1 polkitd[1110]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-04-23T02:16:19.966513+00:00 ubuntu-core1 polkitd[1110]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-23T02:16:19.966514+00:00 ubuntu-core1 polkitd[1110]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-04-23T02:16:19.966520+00:00 ubuntu-core1 systemd-logind[1123]: New seat seat0.
+2025-04-23T02:16:19.966521+00:00 ubuntu-core1 systemd-logind[1123]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-04-23T02:16:19.966523+00:00 ubuntu-core1 systemd-logind[1123]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-04-23T02:16:19.966526+00:00 ubuntu-core1 systemd-logind[1123]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-04-23T02:16:19.966538+00:00 ubuntu-core1 polkitd[1110]: Finished loading, compiling and executing 18 rules
+2025-04-23T02:16:19.966544+00:00 ubuntu-core1 polkitd[1110]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-04-23T02:16:20.714654+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-04-23T02:16:20.727637+00:00 ubuntu-core1 systemd-logind[1123]: New session c1 of user gdm.
+2025-04-23T02:16:20.792794+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=119) by gdm(uid=0)
+2025-04-23T02:16:20.794681+00:00 ubuntu-core1 systemd-logind[1123]: New session 1 of user gdm.
+2025-04-23T02:16:22.876678+00:00 ubuntu-core1 polkitd[1110]: Registered Authentication Agent for unix-session:c1 (system bus name :1.37 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-23T02:16:23.723345+00:00 ubuntu-core1 gnome-keyring-daemon[1965]: The Secret Service was already initialized
+2025-04-23T02:16:23.723871+00:00 ubuntu-core1 gnome-keyring-daemon[1964]: discover_other_daemon: 1
+2025-04-23T02:16:30.839122+00:00 ubuntu-core1 gdm-password]: gkr-pam: unable to locate daemon control file
+2025-04-23T02:16:30.839214+00:00 ubuntu-core1 gdm-password]: gkr-pam: stashed password to try later in open session
+2025-04-23T02:16:30.864064+00:00 ubuntu-core1 gdm-password]: pam_unix(gdm-password:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-23T02:16:30.874111+00:00 ubuntu-core1 systemd-logind[1123]: New session 2 of user mguajardo606.
+2025-04-23T02:16:30.915397+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-23T02:16:30.917495+00:00 ubuntu-core1 systemd-logind[1123]: New session 3 of user mguajardo606.
+2025-04-23T02:16:31.160904+00:00 ubuntu-core1 gdm-password]: gkr-pam: unlocked login keyring
+2025-04-23T02:16:31.535652+00:00 ubuntu-core1 gnome-keyring-daemon[2033]: The PKCS#11 component was already initialized
+2025-04-23T02:16:31.535818+00:00 ubuntu-core1 gnome-keyring-daemon[2033]: The Secret Service was already initialized
+2025-04-23T02:16:31.536178+00:00 ubuntu-core1 gnome-keyring-daemon[2272]: discover_other_daemon: 1
+2025-04-23T02:16:31.537105+00:00 ubuntu-core1 gnome-keyring-daemon[2274]: discover_other_daemon: 1
+2025-04-23T02:16:31.537396+00:00 ubuntu-core1 gnome-keyring-daemon[2276]: discover_other_daemon: 1
+2025-04-23T02:16:32.545404+00:00 ubuntu-core1 polkitd[1110]: Registered Authentication Agent for unix-session:2 (system bus name :1.80 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-23T02:16:33.033214+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-04-23T02:16:33.048751+00:00 ubuntu-core1 polkitd[1110]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.37, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-04-23T02:16:33.053003+00:00 ubuntu-core1 systemd-logind[1123]: Session c1 logged out. Waiting for processes to exit.
+2025-04-23T02:16:33.056446+00:00 ubuntu-core1 systemd-logind[1123]: Removed session c1.
+2025-04-23T02:16:43.375006+00:00 ubuntu-core1 (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-04-23T02:16:43.375739+00:00 ubuntu-core1 systemd-logind[1123]: Removed session 1.
+2025-04-23T02:16:47.983574+00:00 ubuntu-core1 dbus-daemon[1099]: [system] Failed to activate service 'org.freedesktop.UPower.PowerProfiles': timed out (service_start_timeout=25000ms)
+2025-04-23T02:17:01.695847+00:00 ubuntu-core1 CRON[2963]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T02:17:01.708311+00:00 ubuntu-core1 CRON[2963]: pam_unix(cron:session): session closed for user root
+2025-04-23T02:18:54.916305+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt install curl
+2025-04-23T02:18:54.916878+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T02:19:28.533875+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T02:25:01.717403+00:00 ubuntu-core1 CRON[4532]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T02:25:01.721398+00:00 ubuntu-core1 CRON[4532]: pam_unix(cron:session): session closed for user root
+2025-04-23T02:35:01.728973+00:00 ubuntu-core1 CRON[4598]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T02:35:01.734002+00:00 ubuntu-core1 CRON[4598]: pam_unix(cron:session): session closed for user root
+2025-04-23T02:41:45.734375+00:00 ubuntu-core1 dbus-daemon[1099]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-04-23T02:45:01.752619+00:00 ubuntu-core1 CRON[4668]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T02:45:01.760078+00:00 ubuntu-core1 CRON[4668]: pam_unix(cron:session): session closed for user root
+2025-04-23T13:09:39.673610+00:00 ubuntu-core1 systemd-logind[1104]: New seat seat0.
+2025-04-23T13:09:39.673611+00:00 ubuntu-core1 systemd-logind[1104]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-04-23T13:09:39.673612+00:00 ubuntu-core1 systemd-logind[1104]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-04-23T13:09:39.673613+00:00 ubuntu-core1 systemd-logind[1104]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-04-23T13:09:39.673642+00:00 ubuntu-core1 polkitd[1084]: Loading rules from directory /etc/polkit-1/rules.d
+2025-04-23T13:09:39.673643+00:00 ubuntu-core1 polkitd[1084]: Loading rules from directory /run/polkit-1/rules.d
+2025-04-23T13:09:39.673644+00:00 ubuntu-core1 polkitd[1084]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-23T13:09:39.673646+00:00 ubuntu-core1 polkitd[1084]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-04-23T13:09:39.674346+00:00 ubuntu-core1 polkitd[1084]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-04-23T13:09:39.674350+00:00 ubuntu-core1 polkitd[1084]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-04-23T13:09:39.674369+00:00 ubuntu-core1 polkitd[1084]: Finished loading, compiling and executing 18 rules
+2025-04-23T13:09:39.674371+00:00 ubuntu-core1 polkitd[1084]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-04-23T13:09:40.391159+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-04-23T13:09:40.403218+00:00 ubuntu-core1 systemd-logind[1104]: New session c1 of user gdm.
+2025-04-23T13:09:40.449745+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=119) by gdm(uid=0)
+2025-04-23T13:09:40.451227+00:00 ubuntu-core1 systemd-logind[1104]: New session 1 of user gdm.
+2025-04-23T13:09:42.612199+00:00 ubuntu-core1 polkitd[1084]: Registered Authentication Agent for unix-session:c1 (system bus name :1.38 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-23T13:09:43.645451+00:00 ubuntu-core1 gnome-keyring-daemon[1942]: The Secret Service was already initialized
+2025-04-23T13:09:43.645847+00:00 ubuntu-core1 gnome-keyring-daemon[1941]: discover_other_daemon: 1
+2025-04-23T13:10:07.906578+00:00 ubuntu-core1 dbus-daemon[1075]: [system] Failed to activate service 'org.freedesktop.UPower.PowerProfiles': timed out (service_start_timeout=25000ms)
+2025-04-23T13:10:09.373937+00:00 ubuntu-core1 gdm-password]: gkr-pam: unable to locate daemon control file
+2025-04-23T13:10:09.374006+00:00 ubuntu-core1 gdm-password]: gkr-pam: stashed password to try later in open session
+2025-04-23T13:10:09.391782+00:00 ubuntu-core1 gdm-password]: pam_unix(gdm-password:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-23T13:10:09.399909+00:00 ubuntu-core1 systemd-logind[1104]: New session 2 of user mguajardo606.
+2025-04-23T13:10:09.425682+00:00 ubuntu-core1 (systemd): pam_unix(systemd-user:session): session opened for user mguajardo606(uid=1000) by mguajardo606(uid=0)
+2025-04-23T13:10:09.427692+00:00 ubuntu-core1 systemd-logind[1104]: New session 3 of user mguajardo606.
+2025-04-23T13:10:09.634516+00:00 ubuntu-core1 gdm-password]: gkr-pam: unlocked login keyring
+2025-04-23T13:10:09.986229+00:00 ubuntu-core1 gnome-keyring-daemon[2024]: The PKCS#11 component was already initialized
+2025-04-23T13:10:09.986420+00:00 ubuntu-core1 gnome-keyring-daemon[2249]: discover_other_daemon: 1
+2025-04-23T13:10:09.986972+00:00 ubuntu-core1 gnome-keyring-daemon[2247]: discover_other_daemon: 1
+2025-04-23T13:10:09.990056+00:00 ubuntu-core1 gnome-keyring-daemon[2024]: The Secret Service was already initialized
+2025-04-23T13:10:09.990264+00:00 ubuntu-core1 gnome-keyring-daemon[2260]: discover_other_daemon: 1
+2025-04-23T13:10:11.365568+00:00 ubuntu-core1 polkitd[1084]: Registered Authentication Agent for unix-session:2 (system bus name :1.81 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-04-23T13:10:12.364817+00:00 ubuntu-core1 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-04-23T13:10:12.376521+00:00 ubuntu-core1 systemd-logind[1104]: Session c1 logged out. Waiting for processes to exit.
+2025-04-23T13:10:12.391852+00:00 ubuntu-core1 polkitd[1084]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.38, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-04-23T13:10:12.394555+00:00 ubuntu-core1 systemd-logind[1104]: Removed session c1.
+2025-04-23T13:10:22.710557+00:00 ubuntu-core1 (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-04-23T13:10:22.710974+00:00 ubuntu-core1 systemd-logind[1104]: Removed session 1.
+2025-04-23T13:11:16.508566+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt install curl
+2025-04-23T13:11:16.509215+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:11:59.324877+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:15:01.363128+00:00 ubuntu-core1 CRON[4453]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T13:15:01.367020+00:00 ubuntu-core1 CRON[4453]: pam_unix(cron:session): session closed for user root
+2025-04-23T13:17:01.374518+00:00 ubuntu-core1 CRON[4532]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T13:17:01.378336+00:00 ubuntu-core1 CRON[4532]: pam_unix(cron:session): session closed for user root
+2025-04-23T13:24:23.170775+00:00 ubuntu-core1 polkitd[1084]: Identity `unix-group:admin' is not valid, ignoring: No UNIX group with name admin: No such file or directory
+2025-04-23T13:24:26.869437+00:00 ubuntu-core1 polkitd[1084]: Operator of unix-session:2 successfully authenticated as unix-user:mguajardo606 to gain TEMPORARY authorization for action org.gnome.controlcenter.user-accounts.administration for unix-process:5670:88484 [/usr/bin/gnome-control-center system users] (owned by unix-user:mguajardo606)
+2025-04-23T13:24:42.343407+00:00 ubuntu-core1 accounts-daemon: request by system-bus-name::1.136 [/usr/bin/gnome-control-center system users pid:5670 uid:1000]: enable automatic login for user 'mguajardo606' (1000)
+2025-04-23T13:25:01.389542+00:00 ubuntu-core1 CRON[5779]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T13:25:01.392830+00:00 ubuntu-core1 CRON[5779]: pam_unix(cron:session): session closed for user root
+2025-04-23T13:28:08.830336+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt-get install ca-certificates
+2025-04-23T13:28:08.830527+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:28:09.208079+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:29:27.154454+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606/Desktop ; USER=root ; COMMAND=/usr/bin/cp lab-root-ca.crt
+2025-04-23T13:29:27.155579+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:29:27.157929+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:29:40.677287+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606/Desktop ; USER=root ; COMMAND=/usr/bin/cp lab-root-ca.crt /Desktop
+2025-04-23T13:29:40.683767+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:29:40.686125+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:29:47.774173+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606/Desktop ; USER=root ; COMMAND=/usr/sbin/update-ca-certificates
+2025-04-23T13:29:47.774563+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:29:48.503565+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:30:01.404561+00:00 ubuntu-core1 CRON[7691]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T13:30:01.408609+00:00 ubuntu-core1 CRON[7691]: pam_unix(cron:session): session closed for user root
+2025-04-23T13:30:53.182895+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606/Desktop ; USER=root ; COMMAND=/usr/bin/cp lab-root-ca.crt /home/mguajardo606/Desktop
+2025-04-23T13:30:53.183226+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:30:53.186024+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:31:16.014810+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606/Desktop ; USER=root ; COMMAND=/usr/bin/cp lab-root-ca.crt
+2025-04-23T13:31:16.017227+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:31:16.020789+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:31:35.882699+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606/Desktop ; USER=root ; COMMAND=/usr/bin/cp lab-root-ca.crt .
+2025-04-23T13:31:35.883353+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:31:35.885844+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:32:01.251699+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/cp lab-root-ca.crt /home/mguajardo606/Desktop
+2025-04-23T13:32:01.251993+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:32:01.254819+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:32:13.389012+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/cp lab-root-ca.crt /Desktop
+2025-04-23T13:32:13.392189+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:32:13.396639+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:33:02.344981+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/cp lab-root-ca.crt /Home
+2025-04-23T13:33:02.346203+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:33:02.352761+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:33:09.295838+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/sbin/update-ca-certificates
+2025-04-23T13:33:09.296535+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:33:10.017378+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:34:45.419018+00:00 ubuntu-core1 dbus-daemon[1075]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-04-23T13:35:01.427218+00:00 ubuntu-core1 CRON[8917]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T13:35:01.430954+00:00 ubuntu-core1 CRON[8917]: pam_unix(cron:session): session closed for user root
+2025-04-23T13:36:33.477169+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt install curl
+2025-04-23T13:36:33.477341+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:36:39.021460+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:36:43.439424+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt update
+2025-04-23T13:36:43.439904+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:36:47.190287+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:38:14.353752+00:00 ubuntu-core1 pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:38:14.354800+00:00 ubuntu-core1 pkexec[9592]: mguajardo606: Executing command [USER=root] [TTY=unknown] [CWD=/home/mguajardo606] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2025-04-23T13:45:01.689538+00:00 ubuntu-core1 CRON[10101]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T13:45:01.693848+00:00 ubuntu-core1 CRON[10101]: pam_unix(cron:session): session closed for user root
+2025-04-23T13:45:07.793007+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt install openssh-server
+2025-04-23T13:45:07.793407+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:45:14.377482+00:00 ubuntu-core1 useradd[10302]: new user: name=sshd, UID=120, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+2025-04-23T13:45:17.526937+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T13:55:01.715936+00:00 ubuntu-core1 CRON[10770]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T13:55:01.720511+00:00 ubuntu-core1 CRON[10770]: pam_unix(cron:session): session closed for user root
+2025-04-23T13:59:07.828499+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/apt update
+2025-04-23T13:59:07.830676+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T13:59:10.184138+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T14:05:01.746055+00:00 ubuntu-core1 CRON[10946]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T14:05:01.749598+00:00 ubuntu-core1 CRON[10946]: pam_unix(cron:session): session closed for user root
+2025-04-23T14:15:01.767618+00:00 ubuntu-core1 CRON[11606]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T14:15:01.777700+00:00 ubuntu-core1 CRON[11606]: pam_unix(cron:session): session closed for user root
+2025-04-23T14:17:01.781961+00:00 ubuntu-core1 CRON[11748]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T14:17:01.785309+00:00 ubuntu-core1 CRON[11748]: pam_unix(cron:session): session closed for user root
+2025-04-23T14:25:01.792579+00:00 ubuntu-core1 CRON[12206]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T14:25:01.797102+00:00 ubuntu-core1 CRON[12206]: pam_unix(cron:session): session closed for user root
+2025-04-23T14:30:01.810440+00:00 ubuntu-core1 CRON[12402]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T14:30:01.813014+00:00 ubuntu-core1 CRON[12402]: pam_unix(cron:session): session closed for user root
+2025-04-23T14:30:29.765447+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/tar -czvf /home/mguajardo606/Desktop/backup_2025-04-23.tar.gz /etc/
+2025-04-23T14:30:29.765701+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T14:30:31.333238+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T14:33:30.930641+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/tar -czvf /home/mguajardo606/Desktop/backup_2025-04-23.tar.gz /etc/ /var/log
+2025-04-23T14:33:30.931315+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T14:33:31.589248+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T14:35:01.822619+00:00 ubuntu-core1 CRON[12642]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-23T14:35:01.826378+00:00 ubuntu-core1 CRON[12642]: pam_unix(cron:session): session closed for user root
+2025-04-23T14:38:11.107609+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/cp /var/log/syslog /home/mguajardo606/Desktop/syslog.txt
+2025-04-23T14:38:11.119839+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)
+2025-04-23T14:38:11.119899+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session closed for user root
+2025-04-23T14:38:29.472591+00:00 ubuntu-core1 sudo: mguajardo606 : TTY=pts/0 ; PWD=/home/mguajardo606 ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /home/mguajardo606/Desktop/auth_log.txt
+2025-04-23T14:38:29.472727+00:00 ubuntu-core1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mguajardo606(uid=1000)

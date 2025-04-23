@@ -1,0 +1,1002 @@
+Time			Process		PID	Message		
+----------		-------		-----	-------
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcpsrv.0xe15fe612000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.commands.0xe15fe612000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.lease-cmds-hooks.0xe15fe612000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.hooks.0xe15fe612000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcp6.0xe15fe612000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcpsrv.0xe15fe612000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcpsrv.0xe15fe612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcpsrv.0xe15fe612000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcpsrv.0xe15fe612000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcp6.0xe15fe612000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+Apr 22 19:56:31 	kea-dhcp6 	40207 	WARN [kea-dhcp6.dhcpsrv.0xe15fe612000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+Apr 22 19:56:31 	kea-dhcp6 	40207 	WARN [kea-dhcp6.dhcp6.0xe15fe612000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+Apr 22 19:56:31 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcp6.0xe15fe612000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+Apr 22 19:57:43 	dhcp6c 	52073 	Sending Solicit
+Apr 22 19:58:22 	kea-dhcp4 	39804 	INFO [kea-dhcp4.dhcp4.0x382428e12000] DHCP4_SHUTDOWN server shutdown
+Apr 22 19:58:22 	kea-dhcp4 	39804 	INFO [kea-dhcp4.lease-cmds-hooks.0x382428e12000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+Apr 22 19:58:22 	kea-dhcp4 	39804 	INFO [kea-dhcp4.hooks.0x382428e12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+Apr 22 19:58:22 	kea-dhcp6 	40207 	INFO [kea-dhcp6.dhcp6.0xe15fe612000] DHCP6_SHUTDOWN server shutdown
+Apr 22 19:58:22 	kea-dhcp6 	40207 	INFO [kea-dhcp6.lease-cmds-hooks.0xe15fe612000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+Apr 22 19:58:22 	kea-dhcp6 	40207 	INFO [kea-dhcp6.hooks.0xe15fe612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.hosts.0x1ba3d0c12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+Apr 22 19:58:22 	kea-dhcp4 	20406 	WARN [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+Apr 22 19:58:22 	kea-dhcp4 	20406 	WARN [kea-dhcp4.dhcp4.0x1ba3d0c12000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.hooks.0x1ba3d0c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.commands.0x1ba3d0c12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.lease-cmds-hooks.0x1ba3d0c12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.hooks.0x1ba3d0c12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcp4.0x1ba3d0c12000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 1; DDNS: disabled
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+Apr 22 19:58:22 	kea-dhcp4 	20406 	WARN [kea-dhcp4.dhcp4.0x1ba3d0c12000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+Apr 22 19:58:22 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcp4.0x1ba3d0c12000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.hosts.0x17bb68612000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+Apr 22 19:58:22 	kea-dhcp6 	20611 	WARN [kea-dhcp6.dhcpsrv.0x17bb68612000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+Apr 22 19:58:22 	kea-dhcp6 	20611 	WARN [kea-dhcp6.dhcp6.0x17bb68612000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.hooks.0x17bb68612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcpsrv.0x17bb68612000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.commands.0x17bb68612000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.lease-cmds-hooks.0x17bb68612000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.hooks.0x17bb68612000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcp6.0x17bb68612000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcpsrv.0x17bb68612000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcpsrv.0x17bb68612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcpsrv.0x17bb68612000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcpsrv.0x17bb68612000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcp6.0x17bb68612000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+Apr 22 19:58:22 	kea-dhcp6 	20611 	WARN [kea-dhcp6.dhcpsrv.0x17bb68612000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+Apr 22 19:58:22 	kea-dhcp6 	20611 	WARN [kea-dhcp6.dhcp6.0x17bb68612000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+Apr 22 19:58:22 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcp6.0x17bb68612000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+Apr 22 19:59:53 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:00:21 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c15f00] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+Apr 22 20:00:21 	kea-dhcp4 	20406 	INFO [kea-dhcp4.leases.0x1ba3d0c15f00] DHCP4_INIT_REBOOT [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0x86c540: client is in INIT-REBOOT state and requests address 10.10.10.10
+Apr 22 20:00:21 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c15f00] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+Apr 22 20:00:21 	kea-dhcp4 	20406 	INFO [kea-dhcp4.leases.0x1ba3d0c15f00] DHCP4_LEASE_ADVERT [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0x79d08384: lease 10.10.10.10 will be advertised
+Apr 22 20:00:21 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcpsrv.0x1ba3d0c15f00] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+Apr 22 20:00:21 	kea-dhcp4 	20406 	INFO [kea-dhcp4.leases.0x1ba3d0c15f00] DHCP4_LEASE_ALLOC [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0x79d08384: lease 10.10.10.10 has been allocated for 7200 seconds
+Apr 22 20:02:01 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:04:04 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:06:13 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:08:07 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:09:59 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:11:49 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:13:49 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:15:56 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:18:01 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:18:16 	kea-dhcp4 	20406 	INFO [kea-dhcp4.dhcp4.0x1ba3d0c12000] DHCP4_SHUTDOWN server shutdown
+Apr 22 20:18:16 	kea-dhcp4 	20406 	INFO [kea-dhcp4.lease-cmds-hooks.0x1ba3d0c12000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+Apr 22 20:18:16 	kea-dhcp4 	20406 	INFO [kea-dhcp4.hooks.0x1ba3d0c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+Apr 22 20:18:16 	kea-dhcp6 	20611 	INFO [kea-dhcp6.dhcp6.0x17bb68612000] DHCP6_SHUTDOWN server shutdown
+Apr 22 20:18:16 	kea-dhcp6 	20611 	INFO [kea-dhcp6.lease-cmds-hooks.0x17bb68612000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+Apr 22 20:18:16 	kea-dhcp6 	20611 	INFO [kea-dhcp6.hooks.0x17bb68612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.hosts.0x2785b6a12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+Apr 22 20:18:16 	kea-dhcp4 	90122 	WARN [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.hosts.0x2d36c2a12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+Apr 22 20:18:16 	kea-dhcp4 	90122 	WARN [kea-dhcp4.dhcp4.0x2785b6a12000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+Apr 22 20:18:16 	kea-dhcp6 	90553 	WARN [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+Apr 22 20:18:16 	kea-dhcp6 	90553 	WARN [kea-dhcp6.dhcp6.0x2d36c2a12000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.hooks.0x2d36c2a12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.commands.0x2d36c2a12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.hooks.0x2785b6a12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.commands.0x2785b6a12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.lease-cmds-hooks.0x2785b6a12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.hooks.0x2785b6a12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcp4.0x2785b6a12000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.lease-cmds-hooks.0x2d36c2a12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.hooks.0x2d36c2a12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcp6.0x2d36c2a12000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcp6.0x2d36c2a12000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+Apr 22 20:18:16 	kea-dhcp6 	90553 	WARN [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+Apr 22 20:18:16 	kea-dhcp6 	90553 	WARN [kea-dhcp6.dhcp6.0x2d36c2a12000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+Apr 22 20:18:16 	kea-dhcp4 	90122 	WARN [kea-dhcp4.dhcp4.0x2785b6a12000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+Apr 22 20:18:16 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcp6.0x2d36c2a12000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+Apr 22 20:18:16 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcp4.0x2785b6a12000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+Apr 22 20:20:02 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:22:11 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:24:07 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:25:59 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:27:54 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:29:45 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:31:52 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:33:52 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:36:02 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:38:12 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:40:01 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:41:52 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:43:45 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:45:48 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:47:49 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:49:47 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:51:38 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:53:29 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:55:28 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:57:20 	dhcp6c 	52073 	Sending Solicit
+Apr 22 20:59:15 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:00:23 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a16600] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+Apr 22 21:00:23 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a16600] EVAL_RESULT Expression pool_opt1_0 evaluated to 1
+Apr 22 21:00:23 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a16600] EVAL_RESULT Expression pool_opt2_0 evaluated to 1
+Apr 22 21:00:23 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a16600] EVAL_RESULT Expression pool_opt4_0 evaluated to 1
+Apr 22 21:00:23 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a16600] EVAL_RESULT Expression pool_opt3_0 evaluated to 1
+Apr 22 21:00:23 	kea-dhcp4 	90122 	INFO [kea-dhcp4.leases.0x2785b6a16600] DHCP4_LEASE_ALLOC [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0xdcf1b075: lease 10.10.10.10 has been allocated for 7200 seconds
+Apr 22 21:01:12 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:03:01 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:04:51 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:06:49 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:08:44 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:10:43 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:12:47 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:14:57 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:16:51 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:18:17 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_MEMFILE_LFC_START starting Lease File Cleanup
+Apr 22 21:18:17 	kea-dhcp6 	90553 	INFO [kea-dhcp6.dhcpsrv.0x2d36c2a12000] DHCPSRV_MEMFILE_LFC_EXECUTE executing Lease File Cleanup using: /usr/local/sbin/kea-lfc -6 -x /var/lib/kea/dhcp6.leases.2 -i /var/lib/kea/dhcp6.leases.1 -o /var/lib/kea/dhcp6.leases.output -f /var/lib/kea/dhcp6.leases.completed -p /var/lib/kea/dhcp6.leases.pid -c ignored-path
+Apr 22 21:18:17 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_MEMFILE_LFC_START starting Lease File Cleanup
+Apr 22 21:18:17 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a12000] DHCPSRV_MEMFILE_LFC_EXECUTE executing Lease File Cleanup using: /usr/local/sbin/kea-lfc -4 -x /var/lib/kea/dhcp4.leases.2 -i /var/lib/kea/dhcp4.leases.1 -o /var/lib/kea/dhcp4.leases.output -f /var/lib/kea/dhcp4.leases.completed -p /var/lib/kea/dhcp4.leases.pid -c ignored-path
+Apr 22 21:18:48 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:20:47 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:22:43 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:24:51 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:26:58 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:29:02 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:30:53 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:32:55 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:34:51 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:36:44 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:38:48 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:40:49 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:42:45 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:44:54 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:46:47 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:48:35 	dhcp6c 	52073 	Sending Solicit
+Apr 22 21:50:31 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 21:52:30.230372-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 21:54:22.320366-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 21:56:32.690768-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 21:58:40.285172-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:00:23.607939-04:00 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a17400] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+2025-04-22 22:00:23.608222-04:00 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a17400] EVAL_RESULT Expression pool_opt1_0 evaluated to 1
+2025-04-22 22:00:23.608301-04:00 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a17400] EVAL_RESULT Expression pool_opt2_0 evaluated to 1
+2025-04-22 22:00:23.608374-04:00 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a17400] EVAL_RESULT Expression pool_opt4_0 evaluated to 1
+2025-04-22 22:00:23.608446-04:00 	kea-dhcp4 	90122 	INFO [kea-dhcp4.dhcpsrv.0x2785b6a17400] EVAL_RESULT Expression pool_opt3_0 evaluated to 1
+2025-04-22 22:00:23.611374-04:00 	kea-dhcp4 	90122 	INFO [kea-dhcp4.leases.0x2785b6a17400] DHCP4_LEASE_ALLOC [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0xa9f7681f: lease 10.10.10.10 has been allocated for 7200 seconds
+2025-04-22 22:00:43.760547-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:02:43.097783-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:04:51.596450-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:07:01.510762-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:09:10.792906-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:11:05.868616-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:13:02.777638-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:15:03.892517-04:00 	dhcp6c 	52073 	Sending Solicit
+2025-04-22 22:16:48.936933-04:00 	dhclient 	70754 	PREINIT
+2025-04-22 22:16:48.943631-04:00 	dhclient 	13391 	DHCPREQUEST on em0 to 255.255.255.255 port 67
+2025-04-22 22:16:48.944874-04:00 	dhclient 	13391 	DHCPACK from 10.0.2.2
+2025-04-22 22:16:48.947482-04:00 	dhclient 	72308 	REBOOT
+2025-04-22 22:16:48.949857-04:00 	dhclient 	73036 	Starting add_new_address()
+2025-04-22 22:16:48.951658-04:00 	dhclient 	74045 	ifconfig em0 inet 10.0.2.15 netmask 255.255.255.0 broadcast 10.0.2.255
+2025-04-22 22:16:48.958984-04:00 	dhclient 	74743 	New IP Address (em0): 10.0.2.15
+2025-04-22 22:16:48.961404-04:00 	dhclient 	75436 	New Subnet Mask (em0): 255.255.255.0
+2025-04-22 22:16:48.963178-04:00 	dhclient 	76659 	New Broadcast Address (em0): 10.0.2.255
+2025-04-22 22:16:48.965784-04:00 	dhclient 	77866 	New Routers (em0): 10.0.2.2
+2025-04-22 22:16:48.967990-04:00 	dhclient 	78372 	Adding new routes to interface: em0
+2025-04-22 22:16:48.969500-04:00 	dhclient 	79298 	Creating resolv.conf
+2025-04-22 22:16:48.979096-04:00 	dhclient 	13391 	bound to 10.0.2.15 -- renewal in 43200 seconds.
+2025-04-22 22:16:48.984960-04:00 	dhcp6c 	80818 	failed to open /usr/local/etc/dhcp6cctlkey: No such file or directory
+2025-04-22 22:16:48.985105-04:00 	dhcp6c 	80818 	failed initialize control message authentication
+2025-04-22 22:16:48.985174-04:00 	dhcp6c 	80818 	skip opening control port
+2025-04-22 22:16:49.904491-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:16:51.014412-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:16:52.026453-04:00 	dhcp6c 	80962 	restarting
+2025-04-22 22:16:52.155623-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:16:53.227423-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:16:55.411854-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:16:59.510709-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:17:07.722019-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:17:20.741773-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.hosts.0x3a65aee12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-22 22:17:20.742127-04:00 	kea-dhcp6 	16602 	WARN [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-22 22:17:20.742818-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.hosts.0x1b65cf612000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-22 22:17:20.742913-04:00 	kea-dhcp6 	16602 	WARN [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-22 22:17:20.743963-04:00 	kea-dhcp4 	16463 	WARN [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-22 22:17:20.744075-04:00 	kea-dhcp4 	16463 	WARN [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-22 22:17:20.744484-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-22 22:17:20.744712-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-22 22:17:20.745152-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-22 22:17:20.745443-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-22 22:17:20.745731-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-22 22:17:20.745892-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-22 22:17:20.747969-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.hooks.0x3a65aee12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-22 22:17:20.748339-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-22 22:17:20.748572-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.hooks.0x1b65cf612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-22 22:17:20.748652-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.commands.0x3a65aee12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-22 22:17:20.748983-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:20.749259-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:20.749412-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:20.749610-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.lease-cmds-hooks.0x3a65aee12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-22 22:17:20.749741-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:20.749816-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.hooks.0x3a65aee12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-22 22:17:20.749997-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:20.750128-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-22 22:17:20.751036-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-22 22:17:20.751162-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-22 22:17:20.751217-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-22 22:17:20.751241-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-22 22:17:20.751265-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-22 22:17:20.751289-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-22 22:17:20.751313-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-22 22:17:20.751399-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.commands.0x1b65cf612000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-22 22:17:20.752091-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.lease-cmds-hooks.0x1b65cf612000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-22 22:17:20.752158-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.hooks.0x1b65cf612000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-22 22:17:20.752196-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-22 22:17:20.752491-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-22 22:17:20.753970-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-22 22:17:20.754400-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-22 22:17:20.754711-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-22 22:17:20.755667-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-22 22:17:20.756221-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-22 22:17:20.756712-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-22 22:17:20.757057-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-22 22:17:20.757358-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-22 22:17:20.757443-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-22 22:17:20.757568-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-22 22:17:20.761097-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-22 22:17:20.761275-04:00 	kea-dhcp6 	16602 	WARN [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-22 22:17:20.761351-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-22 22:17:20.761616-04:00 	kea-dhcp6 	16602 	WARN [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-22 22:17:20.761706-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-22 22:17:20.761822-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-22 22:17:20.761891-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-22 22:17:20.761962-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-22 22:17:20.763136-04:00 	kea-dhcp4 	16463 	WARN [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-22 22:17:20.763294-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-22 22:17:26.066102-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+2025-04-22 22:17:26.066312-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_opt1_0 evaluated to 1
+2025-04-22 22:17:26.066363-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_opt2_0 evaluated to 1
+2025-04-22 22:17:26.066410-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_opt4_0 evaluated to 1
+2025-04-22 22:17:26.066456-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_opt3_0 evaluated to 1
+2025-04-22 22:17:26.071097-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.leases.0x1b65cf616600] DHCP4_LEASE_ADVERT [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0x1724f081: lease 10.10.10.10 will be advertised
+2025-04-22 22:17:26.072865-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+2025-04-22 22:17:26.072944-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_opt1_0 evaluated to 1
+2025-04-22 22:17:26.072975-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_opt2_0 evaluated to 1
+2025-04-22 22:17:26.073024-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_opt4_0 evaluated to 1
+2025-04-22 22:17:26.073052-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf616600] EVAL_RESULT Expression pool_opt3_0 evaluated to 1
+2025-04-22 22:17:26.073672-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.leases.0x1b65cf616600] DHCP4_LEASE_ALLOC [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0x1724f081: lease 10.10.10.10 has been allocated for 7200 seconds
+2025-04-22 22:17:27.024624-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_DYNAMIC_RECONFIGURATION initiate server reconfiguration using file: /usr/local/etc/kea/kea-dhcp6.conf, after receiving SIGHUP signal or config-reload command
+2025-04-22 22:17:27.026222-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_DYNAMIC_RECONFIGURATION initiate server reconfiguration using file: /usr/local/etc/kea/kea-dhcp4.conf, after receiving SIGHUP signal or config-reload command
+2025-04-22 22:17:27.027848-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.hosts.0x3a65aee12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-22 22:17:27.029957-04:00 	kea-dhcp6 	16602 	WARN [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-22 22:17:27.030614-04:00 	kea-dhcp6 	16602 	WARN [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-22 22:17:27.036014-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.hooks.0x3a65aee12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-22 22:17:27.043623-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-22 22:17:27.058924-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.hosts.0x1b65cf612000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-22 22:17:27.061686-04:00 	kea-dhcp4 	16463 	WARN [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-22 22:17:27.060116-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.lease-cmds-hooks.0x3a65aee12000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-22 22:17:27.061734-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.hooks.0x3a65aee12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-22 22:17:27.062698-04:00 	kea-dhcp4 	16463 	WARN [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-22 22:17:27.062900-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-22 22:17:27.063097-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-22 22:17:27.063279-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.lease-cmds-hooks.0x3a65aee12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-22 22:17:27.063800-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-22 22:17:27.064120-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.hooks.0x3a65aee12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-22 22:17:27.064550-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-22 22:17:27.064870-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-22 22:17:27.065313-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-22 22:17:27.065803-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-22 22:17:27.066293-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-22 22:17:27.066606-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-22 22:17:27.067936-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.hooks.0x1b65cf612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-22 22:17:27.069415-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-22 22:17:27.071639-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:27.071907-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-22 22:17:27.072180-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-22 22:17:27.072527-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:27.072931-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-22 22:17:27.073150-04:00 	kea-dhcp6 	16602 	WARN [kea-dhcp6.dhcpsrv.0x3a65aee12000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-22 22:17:27.073684-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:27.074147-04:00 	kea-dhcp6 	16602 	WARN [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-22 22:17:27.074468-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:27.074606-04:00 	kea-dhcp6 	16602 	INFO [kea-dhcp6.dhcp6.0x3a65aee12000] DHCP6_DYNAMIC_RECONFIGURATION_SUCCESS dynamic server reconfiguration succeeded with file: /usr/local/etc/kea/kea-dhcp6.conf
+2025-04-22 22:17:27.074764-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-22 22:17:27.074995-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-22 22:17:27.075126-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-22 22:17:27.075304-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-22 22:17:27.075329-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-22 22:17:27.075354-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-22 22:17:27.075378-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-22 22:17:27.075405-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-22 22:17:27.075439-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.lease-cmds-hooks.0x1b65cf612000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-22 22:17:27.075528-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.hooks.0x1b65cf612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-22 22:17:27.076534-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.lease-cmds-hooks.0x1b65cf612000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-22 22:17:27.076774-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.hooks.0x1b65cf612000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-22 22:17:27.076816-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-22 22:17:27.077355-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-22 22:17:27.077522-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-22 22:17:27.077718-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-22 22:17:27.078049-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-22 22:17:27.078154-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-22 22:17:27.082653-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-22 22:17:27.082766-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-22 22:17:27.082817-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-22 22:17:27.082866-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-22 22:17:27.082914-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcpsrv.0x1b65cf612000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-22 22:17:27.083691-04:00 	kea-dhcp4 	16463 	WARN [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-22 22:17:27.083691-04:00 	kea-dhcp4 	16463 	INFO [kea-dhcp4.dhcp4.0x1b65cf612000] DHCP4_DYNAMIC_RECONFIGURATION_SUCCESS dynamic server reconfiguration succeeded with file: /usr/local/etc/kea/kea-dhcp4.conf
+2025-04-22 22:17:30.684973-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:18:02.318446-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:19:06.543281-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:20:57.607428-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:22:58.358568-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:24:46.995467-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:26:37.993072-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:28:35.988073-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:30:33.989339-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:32:22.813356-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:34:21.915104-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:36:20.823112-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:38:09.403057-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:40:19.143227-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:42:10.616036-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:44:20.783004-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:46:29.348144-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-22 22:48:32.293607-04:00 	dhcp6c 	80962 	Sending Solicit
+2025-04-23 03:09:57.981919-04:00 	dhclient 	44689 	PREINIT
+2025-04-23 03:09:57.989178-04:00 	dhclient 	95207 	DHCPREQUEST on em0 to 255.255.255.255 port 67
+2025-04-23 03:09:57.993493-04:00 	dhclient 	95207 	DHCPACK from 10.0.2.2
+2025-04-23 03:09:57.998023-04:00 	dhclient 	45637 	REBOOT
+2025-04-23 03:09:58.002027-04:00 	dhclient 	46773 	Starting add_new_address()
+2025-04-23 03:09:58.004794-04:00 	dhclient 	47105 	ifconfig em0 inet 10.0.2.15 netmask 255.255.255.0 broadcast 10.0.2.255
+2025-04-23 03:09:58.014680-04:00 	dhclient 	48340 	New IP Address (em0): 10.0.2.15
+2025-04-23 03:09:58.017495-04:00 	dhclient 	49112 	New Subnet Mask (em0): 255.255.255.0
+2025-04-23 03:09:58.019825-04:00 	dhclient 	49873 	New Broadcast Address (em0): 10.0.2.255
+2025-04-23 03:09:58.022149-04:00 	dhclient 	51011 	New Routers (em0): 10.0.2.2
+2025-04-23 03:09:58.026578-04:00 	dhclient 	51920 	Adding new routes to interface: em0
+2025-04-23 03:09:58.029206-04:00 	dhclient 	52762 	Creating resolv.conf
+2025-04-23 03:09:58.045293-04:00 	dhclient 	95207 	bound to 10.0.2.15 -- renewal in 43200 seconds.
+2025-04-23 03:09:58.051746-04:00 	dhcp6c 	55351 	failed to open /usr/local/etc/dhcp6cctlkey: No such file or directory
+2025-04-23 03:09:58.052006-04:00 	dhcp6c 	55351 	failed initialize control message authentication
+2025-04-23 03:09:58.052070-04:00 	dhcp6c 	55351 	skip opening control port
+2025-04-23 03:09:58.952648-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 03:10:00.072003-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 03:10:00.181865-04:00 	dhcp6c 	55638 	restarting
+2025-04-23 03:10:00.304974-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 03:10:01.346280-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 03:10:03.448079-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 03:10:07.551296-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 03:10:15.851480-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:10:22.941971-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.hosts.0x3043f2c12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:10:22.942720-04:00 	kea-dhcp6 	33914 	WARN [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:10:22.943245-04:00 	kea-dhcp6 	33914 	WARN [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:10:22.943660-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.hosts.0x4eb3d412000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:10:22.945887-04:00 	kea-dhcp4 	33362 	WARN [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:10:22.946151-04:00 	kea-dhcp4 	33362 	WARN [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:10:22.946246-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:10:22.946434-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:10:22.946890-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:10:22.946958-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:10:22.947012-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:10:22.947069-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:10:22.949635-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.hooks.0x3043f2c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:10:22.950308-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.hooks.0x4eb3d412000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:10:22.951186-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:10:22.951876-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.commands.0x3043f2c12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-23 09:10:22.952017-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:22.952816-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.lease-cmds-hooks.0x3043f2c12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:10:22.953132-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:22.953214-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.hooks.0x3043f2c12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:10:22.953384-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:22.953473-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:10:22.953688-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:22.955302-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:22.955544-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:10:22.956986-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:10:22.957139-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:10:22.957201-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:10:22.957263-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:10:22.957318-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:10:22.957482-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:10:22.957548-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:10:22.957674-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.commands.0x4eb3d412000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-23 09:10:22.958450-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.lease-cmds-hooks.0x4eb3d412000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:10:22.958603-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:10:22.958674-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.hooks.0x4eb3d412000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:10:22.958928-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:10:22.962465-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:10:22.962966-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:10:22.963381-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:10:22.963727-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:10:22.964100-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:10:22.964613-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:10:22.964972-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:10:22.965248-04:00 	kea-dhcp6 	33914 	WARN [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:10:22.965573-04:00 	kea-dhcp6 	33914 	WARN [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:10:22.965713-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-23 09:10:22.966269-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:10:22.966392-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:10:22.970676-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-23 09:10:22.970772-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-23 09:10:22.970833-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-23 09:10:22.970893-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-23 09:10:22.970949-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-23 09:10:22.972473-04:00 	kea-dhcp4 	33362 	WARN [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:10:22.972628-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-23 09:10:29.563418-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_DYNAMIC_RECONFIGURATION initiate server reconfiguration using file: /usr/local/etc/kea/kea-dhcp4.conf, after receiving SIGHUP signal or config-reload command
+2025-04-23 09:10:29.563210-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_DYNAMIC_RECONFIGURATION initiate server reconfiguration using file: /usr/local/etc/kea/kea-dhcp6.conf, after receiving SIGHUP signal or config-reload command
+2025-04-23 09:10:29.564394-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.hosts.0x3043f2c12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:10:29.564508-04:00 	kea-dhcp6 	33914 	WARN [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:10:29.564564-04:00 	kea-dhcp6 	33914 	WARN [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:10:29.564602-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.hooks.0x3043f2c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:10:29.564685-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:10:29.564829-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.lease-cmds-hooks.0x3043f2c12000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:10:29.564934-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.hooks.0x3043f2c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:10:29.565670-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.lease-cmds-hooks.0x3043f2c12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:10:29.565858-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.hooks.0x3043f2c12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:10:29.565890-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:10:29.566060-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:10:29.566060-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.hosts.0x4eb3d412000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:10:29.566060-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:10:29.566060-04:00 	kea-dhcp4 	33362 	WARN [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:10:29.566060-04:00 	kea-dhcp4 	33362 	WARN [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:10:29.566060-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:10:29.566060-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:10:29.566060-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:10:29.567305-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:10:29.567531-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:10:29.567659-04:00 	kea-dhcp6 	33914 	WARN [kea-dhcp6.dhcpsrv.0x3043f2c12000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:10:29.567887-04:00 	kea-dhcp6 	33914 	WARN [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:10:29.567969-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_DYNAMIC_RECONFIGURATION_SUCCESS dynamic server reconfiguration succeeded with file: /usr/local/etc/kea/kea-dhcp6.conf
+2025-04-23 09:10:29.568086-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:10:29.568149-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:10:29.568204-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:10:29.568257-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:10:29.568316-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:10:29.568381-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.hooks.0x4eb3d412000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:10:29.568509-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:29.568714-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:29.568899-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:29.569055-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:29.569233-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:10:29.569428-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:10:29.569558-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:10:29.569621-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:10:29.569674-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:10:29.569727-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:10:29.569809-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:10:29.569832-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:10:29.569862-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.lease-cmds-hooks.0x4eb3d412000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:10:29.569937-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.hooks.0x4eb3d412000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:10:29.570677-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.lease-cmds-hooks.0x4eb3d412000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:10:29.570751-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.hooks.0x4eb3d412000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:10:29.570780-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:10:29.571202-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:10:29.571480-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:10:29.571632-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:10:29.571770-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:10:29.571858-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:10:29.575818-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-23 09:10:29.575889-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-23 09:10:29.575916-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-23 09:10:29.575940-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-23 09:10:29.575963-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d412000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-23 09:10:29.576882-04:00 	kea-dhcp4 	33362 	WARN [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:10:29.577005-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_DYNAMIC_RECONFIGURATION_SUCCESS dynamic server reconfiguration succeeded with file: /usr/local/etc/kea/kea-dhcp4.conf
+2025-04-23 09:10:29.838491-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d417400] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+2025-04-23 09:10:29.838545-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d417400] EVAL_RESULT Expression pool_opt1_0 evaluated to 1
+2025-04-23 09:10:29.838570-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d417400] EVAL_RESULT Expression pool_opt2_0 evaluated to 1
+2025-04-23 09:10:29.838593-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d417400] EVAL_RESULT Expression pool_opt4_0 evaluated to 1
+2025-04-23 09:10:29.838616-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcpsrv.0x4eb3d417400] EVAL_RESULT Expression pool_opt3_0 evaluated to 1
+2025-04-23 09:10:29.840114-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.leases.0x4eb3d417400] DHCP4_INIT_REBOOT [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0x3423b667: client is in INIT-REBOOT state and requests address 10.10.10.10
+2025-04-23 09:10:29.841010-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.leases.0x4eb3d417400] DHCP4_LEASE_ALLOC [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0x3423b667: lease 10.10.10.10 has been allocated for 7200 seconds
+2025-04-23 09:10:33.478505-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:11:05.116826-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:12:09.261627-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:14:00.307703-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:16:01.082640-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:17:49.597830-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:18:27.575113-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.dhcp4.0x4eb3d412000] DHCP4_SHUTDOWN server shutdown
+2025-04-23 09:18:27.575582-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.lease-cmds-hooks.0x4eb3d412000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:18:27.575721-04:00 	kea-dhcp4 	33362 	INFO [kea-dhcp4.hooks.0x4eb3d412000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:18:27.587545-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.dhcp6.0x3043f2c12000] DHCP6_SHUTDOWN server shutdown
+2025-04-23 09:18:27.587899-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.lease-cmds-hooks.0x3043f2c12000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:18:27.588167-04:00 	kea-dhcp6 	33914 	INFO [kea-dhcp6.hooks.0x3043f2c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:18:27.621801-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.hosts.0x1e92e6412000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:18:27.621937-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.hosts.0x3e8e17012000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:18:27.622136-04:00 	kea-dhcp6 	26516 	WARN [kea-dhcp6.dhcpsrv.0x1e92e6412000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:18:27.622570-04:00 	kea-dhcp4 	26351 	WARN [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:18:27.622676-04:00 	kea-dhcp6 	26516 	WARN [kea-dhcp6.dhcp6.0x1e92e6412000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:18:27.622748-04:00 	kea-dhcp4 	26351 	WARN [kea-dhcp4.dhcp4.0x3e8e17012000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:18:27.623409-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.hooks.0x1e92e6412000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:18:27.623507-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:18:27.623720-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcpsrv.0x1e92e6412000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:18:27.623804-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:18:27.624016-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.commands.0x1e92e6412000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-23 09:18:27.624099-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:18:27.624924-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.lease-cmds-hooks.0x1e92e6412000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:18:27.625010-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:18:27.625085-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.hooks.0x1e92e6412000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:18:27.625205-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:18:27.625291-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcp6.0x1e92e6412000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:18:27.625468-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:18:27.626818-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcpsrv.0x1e92e6412000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:18:27.627590-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.hooks.0x3e8e17012000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:18:27.627885-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcpsrv.0x1e92e6412000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:18:27.628359-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:18:27.628536-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcpsrv.0x1e92e6412000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:18:27.628816-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:18:27.628950-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcpsrv.0x1e92e6412000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:18:27.629156-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:18:27.629273-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcpsrv.0x1e92e6412000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:18:27.629445-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:18:27.629772-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcp6.0x1e92e6412000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:18:27.629946-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:18:27.630104-04:00 	kea-dhcp6 	26516 	WARN [kea-dhcp6.dhcpsrv.0x1e92e6412000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:18:27.630330-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:18:27.630576-04:00 	kea-dhcp6 	26516 	WARN [kea-dhcp6.dhcp6.0x1e92e6412000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:18:27.630727-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:18:27.630841-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcp6.0x1e92e6412000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-23 09:18:27.630913-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:18:27.630994-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:18:27.631050-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:18:27.631109-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:18:27.631164-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:18:27.631368-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.commands.0x3e8e17012000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-23 09:18:27.632128-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.lease-cmds-hooks.0x3e8e17012000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:18:27.632194-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.hooks.0x3e8e17012000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:18:27.632268-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcp4.0x3e8e17012000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:18:27.634053-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:18:27.634329-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:18:27.634624-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:18:27.634884-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:18:27.634998-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:18:27.639620-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-23 09:18:27.639788-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-23 09:18:27.639856-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-23 09:18:27.639923-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-23 09:18:27.639977-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcpsrv.0x3e8e17012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-23 09:18:27.641157-04:00 	kea-dhcp4 	26351 	WARN [kea-dhcp4.dhcp4.0x3e8e17012000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:18:27.641437-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcp4.0x3e8e17012000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-23 09:19:40.594014-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:20:25.841471-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.dhcp6.0x1e92e6412000] DHCP6_SHUTDOWN server shutdown
+2025-04-23 09:20:25.841695-04:00 	kea-dhcp4 	26351 	INFO [kea-dhcp4.dhcp4.0x3e8e17012000] DHCP4_SHUTDOWN server shutdown
+2025-04-23 09:20:25.841955-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.lease-cmds-hooks.0x1e92e6412000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:20:25.842070-04:00 	kea-dhcp6 	26516 	INFO [kea-dhcp6.hooks.0x1e92e6412000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:20:25.879251-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.hosts.0x1db0e5812000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:20:25.879877-04:00 	kea-dhcp4 	81911 	WARN [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:20:25.879979-04:00 	kea-dhcp4 	81911 	WARN [kea-dhcp4.dhcp4.0x1db0e5812000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:20:25.880064-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:20:25.880131-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:20:25.880192-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:20:25.880252-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:20:25.880324-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:20:25.880388-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:20:25.880962-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.hooks.0x1db0e5812000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:20:25.881310-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:25.881607-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:25.881786-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:25.881965-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:25.882139-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:25.882376-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:20:25.882528-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:20:25.882594-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:20:25.882656-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:20:25.882716-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:20:25.882776-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:20:25.882837-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:20:25.882969-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.commands.0x1db0e5812000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-23 09:20:25.883688-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.lease-cmds-hooks.0x1db0e5812000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:20:25.883767-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.hooks.0x1db0e5812000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:20:25.883843-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcp4.0x1db0e5812000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:20:25.885945-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:20:25.886299-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:20:25.886753-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:20:25.887099-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:20:25.887236-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:20:25.891658-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-23 09:20:25.891743-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-23 09:20:25.891808-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-23 09:20:25.891870-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-23 09:20:25.891931-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcpsrv.0x1db0e5812000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-23 09:20:25.892968-04:00 	kea-dhcp4 	81911 	WARN [kea-dhcp4.dhcp4.0x1db0e5812000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:20:25.893211-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcp4.0x1db0e5812000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-23 09:20:25.910870-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.hosts.0x3a435fa12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:20:25.911042-04:00 	kea-dhcp6 	82411 	WARN [kea-dhcp6.dhcpsrv.0x3a435fa12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:20:25.911114-04:00 	kea-dhcp6 	82411 	WARN [kea-dhcp6.dhcp6.0x3a435fa12000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:20:25.911676-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.hooks.0x3a435fa12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:20:25.912035-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcpsrv.0x3a435fa12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:20:25.912431-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.commands.0x3a435fa12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-23 09:20:25.913216-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.lease-cmds-hooks.0x3a435fa12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:20:25.913337-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.hooks.0x3a435fa12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:20:25.913447-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcp6.0x3a435fa12000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:20:25.915122-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcpsrv.0x3a435fa12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:20:25.915378-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcpsrv.0x3a435fa12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:20:25.915534-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcpsrv.0x3a435fa12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:20:25.915647-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcpsrv.0x3a435fa12000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:20:25.915750-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcpsrv.0x3a435fa12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:20:25.916037-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcp6.0x3a435fa12000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:20:25.916179-04:00 	kea-dhcp6 	82411 	WARN [kea-dhcp6.dhcpsrv.0x3a435fa12000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:20:25.916375-04:00 	kea-dhcp6 	82411 	WARN [kea-dhcp6.dhcp6.0x3a435fa12000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:20:25.916493-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcp6.0x3a435fa12000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-23 09:20:36.378871-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.dhcp4.0x1db0e5812000] DHCP4_SHUTDOWN server shutdown
+2025-04-23 09:20:36.379211-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.lease-cmds-hooks.0x1db0e5812000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:20:36.379348-04:00 	kea-dhcp4 	81911 	INFO [kea-dhcp4.hooks.0x1db0e5812000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:20:36.385764-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.dhcp6.0x3a435fa12000] DHCP6_SHUTDOWN server shutdown
+2025-04-23 09:20:36.386012-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.lease-cmds-hooks.0x3a435fa12000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:20:36.386141-04:00 	kea-dhcp6 	82411 	INFO [kea-dhcp6.hooks.0x3a435fa12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:20:36.414063-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.hosts.0x34566a012000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:20:36.414931-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.hosts.0x434da812000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:20:36.415102-04:00 	kea-dhcp4 	27331 	WARN [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:20:36.415133-04:00 	kea-dhcp4 	27331 	WARN [kea-dhcp4.dhcp4.0x34566a012000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:20:36.415173-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:20:36.415199-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:20:36.415222-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:20:36.415246-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:20:36.415269-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:20:36.415293-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:20:36.415032-04:00 	kea-dhcp6 	27796 	WARN [kea-dhcp6.dhcpsrv.0x434da812000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:20:36.415058-04:00 	kea-dhcp6 	27796 	WARN [kea-dhcp6.dhcp6.0x434da812000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:20:36.415788-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.hooks.0x34566a012000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:20:36.415978-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:36.416303-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:36.416422-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:36.416533-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:36.416638-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:20:36.416792-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:20:36.416881-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:20:36.416905-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:20:36.416928-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:20:36.416951-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:20:36.416973-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:20:36.416996-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:20:36.417087-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.commands.0x34566a012000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-23 09:20:36.417714-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.lease-cmds-hooks.0x34566a012000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:20:36.417741-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.hooks.0x34566a012000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:20:36.417774-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcp4.0x34566a012000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:20:36.419175-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:20:36.419336-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:20:36.419587-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:20:36.419791-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:20:36.419850-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:20:36.423432-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-23 09:20:36.423459-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-23 09:20:36.423483-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-23 09:20:36.423507-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-23 09:20:36.423531-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcpsrv.0x34566a012000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-23 09:20:36.424506-04:00 	kea-dhcp4 	27331 	WARN [kea-dhcp4.dhcp4.0x34566a012000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:20:36.424592-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcp4.0x34566a012000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-23 09:20:36.426642-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.hooks.0x434da812000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:20:36.426801-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcpsrv.0x434da812000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:20:36.426986-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.commands.0x434da812000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-23 09:20:36.427615-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.lease-cmds-hooks.0x434da812000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:20:36.427688-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.hooks.0x434da812000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:20:36.427765-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcp6.0x434da812000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:20:36.429677-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcpsrv.0x434da812000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:20:36.430030-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcpsrv.0x434da812000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:20:36.430191-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcpsrv.0x434da812000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:20:36.430305-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcpsrv.0x434da812000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:20:36.430461-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcpsrv.0x434da812000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:20:36.430746-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcp6.0x434da812000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:20:36.430885-04:00 	kea-dhcp6 	27796 	WARN [kea-dhcp6.dhcpsrv.0x434da812000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:20:36.431151-04:00 	kea-dhcp6 	27796 	WARN [kea-dhcp6.dhcp6.0x434da812000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:20:36.431367-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcp6.0x434da812000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-23 09:21:38.627979-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:23:36.689537-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:25:25.470115-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:27:24.667662-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:29:23.585233-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:31:12.107635-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:33:21.901002-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:35:13.368761-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:37:23.525365-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:39:32.148860-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:41:35.107320-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:43:44.178532-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:45:37.684490-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:47:30.198823-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:49:19.802387-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:51:19.594059-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:53:27.028547-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:54:36.641321-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.dhcp4.0x34566a012000] DHCP4_SHUTDOWN server shutdown
+2025-04-23 09:54:36.641776-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.lease-cmds-hooks.0x34566a012000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:54:36.641929-04:00 	kea-dhcp4 	27331 	INFO [kea-dhcp4.hooks.0x34566a012000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:54:36.643877-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.dhcp6.0x434da812000] DHCP6_SHUTDOWN server shutdown
+2025-04-23 09:54:36.644340-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.lease-cmds-hooks.0x434da812000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:54:36.644504-04:00 	kea-dhcp6 	27796 	INFO [kea-dhcp6.hooks.0x434da812000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:54:36.673015-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.hosts.0x88659c12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:54:36.673496-04:00 	kea-dhcp4 	72729 	WARN [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:54:36.673581-04:00 	kea-dhcp4 	72729 	WARN [kea-dhcp4.dhcp4.0x88659c12000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:54:36.673621-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:54:36.673647-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:54:36.673670-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:54:36.673694-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:54:36.673717-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:54:36.673742-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:54:36.674263-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.hooks.0x88659c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:54:36.674658-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.hosts.0x148881612000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:54:36.674563-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:36.674767-04:00 	kea-dhcp6 	73195 	WARN [kea-dhcp6.dhcpsrv.0x148881612000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:54:36.674846-04:00 	kea-dhcp6 	73195 	WARN [kea-dhcp6.dhcp6.0x148881612000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:54:36.675333-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.hooks.0x148881612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:54:36.675489-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcpsrv.0x148881612000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:54:36.675709-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.commands.0x148881612000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-23 09:54:36.676394-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.lease-cmds-hooks.0x148881612000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:54:36.676480-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.hooks.0x148881612000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:54:36.676521-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcp6.0x148881612000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:54:36.677786-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcpsrv.0x148881612000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:54:36.678036-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcpsrv.0x148881612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:54:36.678214-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcpsrv.0x148881612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:54:36.678341-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcpsrv.0x148881612000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:54:36.678457-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcpsrv.0x148881612000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:54:36.678772-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcp6.0x148881612000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:54:36.678937-04:00 	kea-dhcp6 	73195 	WARN [kea-dhcp6.dhcpsrv.0x148881612000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:54:36.679161-04:00 	kea-dhcp6 	73195 	WARN [kea-dhcp6.dhcp6.0x148881612000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:54:36.679543-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:36.679672-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcp6.0x148881612000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-23 09:54:36.679877-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:36.680097-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:36.680307-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:36.681560-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:54:36.681719-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:54:36.681789-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:54:36.681852-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:54:36.681913-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:54:36.681981-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:54:36.682044-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:54:36.682191-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.commands.0x88659c12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-23 09:54:36.682885-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.lease-cmds-hooks.0x88659c12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:54:36.682959-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.hooks.0x88659c12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:54:36.683033-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcp4.0x88659c12000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:54:36.684952-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:54:36.685231-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:54:36.685876-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:54:36.686147-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:54:36.686210-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:54:36.690620-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-23 09:54:36.690703-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-23 09:54:36.690769-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-23 09:54:36.690831-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-23 09:54:36.690893-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcpsrv.0x88659c12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-23 09:54:36.691851-04:00 	kea-dhcp4 	72729 	WARN [kea-dhcp4.dhcp4.0x88659c12000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:54:36.691851-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcp4.0x88659c12000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-23 09:54:39.541920-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.dhcp4.0x88659c12000] DHCP4_SHUTDOWN server shutdown
+2025-04-23 09:54:39.542292-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.lease-cmds-hooks.0x88659c12000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:54:39.542432-04:00 	kea-dhcp4 	72729 	INFO [kea-dhcp4.hooks.0x88659c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:54:39.545491-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.dhcp6.0x148881612000] DHCP6_SHUTDOWN server shutdown
+2025-04-23 09:54:39.546042-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.lease-cmds-hooks.0x148881612000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:54:39.546234-04:00 	kea-dhcp6 	73195 	INFO [kea-dhcp6.hooks.0x148881612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:54:39.574892-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.hosts.0x3a21e1612000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:54:39.575481-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.hosts.0x1ce610c12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:54:39.575587-04:00 	kea-dhcp4 	87018 	WARN [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:54:39.575744-04:00 	kea-dhcp6 	87510 	WARN [kea-dhcp6.dhcpsrv.0x1ce610c12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:54:39.575824-04:00 	kea-dhcp4 	87018 	WARN [kea-dhcp4.dhcp4.0x3a21e1612000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:54:39.575897-04:00 	kea-dhcp6 	87510 	WARN [kea-dhcp6.dhcp6.0x1ce610c12000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:54:39.575983-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:54:39.576542-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.hooks.0x1ce610c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:54:39.576630-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:54:39.576811-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcpsrv.0x1ce610c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:54:39.576888-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:54:39.577115-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.commands.0x1ce610c12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-23 09:54:39.577196-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:54:39.577919-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.lease-cmds-hooks.0x1ce610c12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:54:39.578001-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:54:39.578212-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.hooks.0x1ce610c12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:54:39.578290-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:54:39.578377-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcp6.0x1ce610c12000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:54:39.578912-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.hooks.0x3a21e1612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:54:39.580452-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcpsrv.0x1ce610c12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:54:39.580909-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:39.581232-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcpsrv.0x1ce610c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:54:39.581520-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:39.581705-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcpsrv.0x1ce610c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:54:39.581885-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:39.582014-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcpsrv.0x1ce610c12000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:54:39.582201-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:39.582319-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcpsrv.0x1ce610c12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:54:39.582488-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:54:39.582785-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcp6.0x1ce610c12000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:54:39.583019-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:54:39.583190-04:00 	kea-dhcp6 	87510 	WARN [kea-dhcp6.dhcpsrv.0x1ce610c12000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:54:39.583328-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:54:39.583570-04:00 	kea-dhcp6 	87510 	WARN [kea-dhcp6.dhcp6.0x1ce610c12000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:54:39.583662-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:54:39.583780-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcp6.0x1ce610c12000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-23 09:54:39.583852-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:54:39.583927-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:54:39.583989-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:54:39.584052-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:54:39.584181-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.commands.0x3a21e1612000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-23 09:54:39.584915-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.lease-cmds-hooks.0x3a21e1612000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:54:39.584992-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.hooks.0x3a21e1612000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:54:39.585081-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcp4.0x3a21e1612000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:54:39.586610-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:54:39.586829-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:54:39.587131-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:54:39.587386-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:54:39.587490-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcpsrv.0x3a21e1612000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:54:39.592943-04:00 	kea-dhcp4 	87018 	WARN [kea-dhcp4.dhcp4.0x3a21e1612000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:54:39.593121-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcp4.0x3a21e1612000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-23 09:55:31.758808-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:55:41.747858-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.dhcp4.0x3a21e1612000] DHCP4_SHUTDOWN server shutdown
+2025-04-23 09:55:41.748292-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.lease-cmds-hooks.0x3a21e1612000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:55:41.748427-04:00 	kea-dhcp4 	87018 	INFO [kea-dhcp4.hooks.0x3a21e1612000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:55:41.753800-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.dhcp6.0x1ce610c12000] DHCP6_SHUTDOWN server shutdown
+2025-04-23 09:55:41.754122-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.lease-cmds-hooks.0x1ce610c12000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:55:41.754266-04:00 	kea-dhcp6 	87510 	INFO [kea-dhcp6.hooks.0x1ce610c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:55:41.783935-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.hosts.0x1431ab212000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:55:41.784717-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.hosts.0x22b1ad012000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:55:41.785159-04:00 	kea-dhcp4 	68218 	WARN [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:55:41.785312-04:00 	kea-dhcp6 	68561 	WARN [kea-dhcp6.dhcpsrv.0x22b1ad012000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:55:41.785392-04:00 	kea-dhcp4 	68218 	WARN [kea-dhcp4.dhcp4.0x1431ab212000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:55:41.785492-04:00 	kea-dhcp6 	68561 	WARN [kea-dhcp6.dhcp6.0x22b1ad012000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:55:41.785584-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:55:41.786163-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.hooks.0x22b1ad012000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:55:41.786254-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:55:41.786408-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcpsrv.0x22b1ad012000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:55:41.786482-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:55:41.786696-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.commands.0x22b1ad012000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-23 09:55:41.786773-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:55:41.787522-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.lease-cmds-hooks.0x22b1ad012000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:55:41.787617-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:55:41.787692-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.hooks.0x22b1ad012000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:55:41.787765-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:55:41.787852-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcp6.0x22b1ad012000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:55:41.788391-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.hooks.0x1431ab212000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:55:41.789721-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcpsrv.0x22b1ad012000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:55:41.790015-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:41.790263-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcpsrv.0x22b1ad012000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:55:41.790534-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:41.790723-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcpsrv.0x22b1ad012000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:55:41.790994-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:41.791128-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcpsrv.0x22b1ad012000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:55:41.791493-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:41.791634-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcpsrv.0x22b1ad012000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:55:41.791823-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:41.792141-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcp6.0x22b1ad012000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:55:41.792444-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:55:41.792605-04:00 	kea-dhcp6 	68561 	WARN [kea-dhcp6.dhcpsrv.0x22b1ad012000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:55:41.792742-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:55:41.792972-04:00 	kea-dhcp6 	68561 	WARN [kea-dhcp6.dhcp6.0x22b1ad012000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:55:41.793070-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:55:41.793184-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcp6.0x22b1ad012000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-23 09:55:41.793255-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:55:41.793386-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:55:41.793453-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:55:41.793516-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:55:41.793657-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.commands.0x1431ab212000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-23 09:55:41.794332-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.lease-cmds-hooks.0x1431ab212000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:55:41.794411-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.hooks.0x1431ab212000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:55:41.794487-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcp4.0x1431ab212000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:55:41.796133-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:55:41.796351-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:55:41.796637-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:55:41.796888-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:55:41.796989-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:55:41.800392-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-23 09:55:41.800469-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-23 09:55:41.800532-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-23 09:55:41.800594-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-23 09:55:41.800655-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcpsrv.0x1431ab212000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-23 09:55:41.801888-04:00 	kea-dhcp4 	68218 	WARN [kea-dhcp4.dhcp4.0x1431ab212000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:55:41.802058-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcp4.0x1431ab212000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-23 09:55:47.203421-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.dhcp4.0x1431ab212000] DHCP4_SHUTDOWN server shutdown
+2025-04-23 09:55:47.203853-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.lease-cmds-hooks.0x1431ab212000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:55:47.203993-04:00 	kea-dhcp4 	68218 	INFO [kea-dhcp4.hooks.0x1431ab212000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:55:47.210121-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.dhcp6.0x22b1ad012000] DHCP6_SHUTDOWN server shutdown
+2025-04-23 09:55:47.210369-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.lease-cmds-hooks.0x22b1ad012000] LEASE_CMDS_DEINIT_OK unloading Lease Commands hooks library successful
+2025-04-23 09:55:47.210509-04:00 	kea-dhcp6 	68561 	INFO [kea-dhcp6.hooks.0x22b1ad012000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:55:47.237748-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.hosts.0x118b25e12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:55:47.238257-04:00 	kea-dhcp4 	81053 	WARN [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:55:47.238339-04:00 	kea-dhcp4 	81053 	WARN [kea-dhcp4.dhcp4.0x118b25e12000] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:55:47.238418-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:55:47.238483-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:55:47.238544-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:55:47.238605-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:55:47.238665-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:55:47.238839-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:55:47.239413-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.hooks.0x118b25e12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:55:47.239728-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.10.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:47.239978-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.20.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:47.240137-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.11.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:47.240218-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.hosts.0x1378f5c12000] HOSTS_BACKENDS_REGISTERED the following host backend types are available:
+2025-04-23 09:55:47.240401-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.40.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:47.240545-04:00 	kea-dhcp6 	81332 	WARN [kea-dhcp6.dhcpsrv.0x1378f5c12000] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2025-04-23 09:55:47.240715-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.10.30.0/24 with params: valid-lifetime=7200
+2025-04-23 09:55:47.240790-04:00 	kea-dhcp6 	81332 	WARN [kea-dhcp6.dhcp6.0x1378f5c12000] DHCP6_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2025-04-23 09:55:47.240999-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:55:47.241643-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.hooks.0x1378f5c12000] HOOKS_LIBRARY_CLOSED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully closed
+2025-04-23 09:55:47.241802-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1
+2025-04-23 09:55:47.242018-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcpsrv.0x1378f5c12000] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2025-04-23 09:55:47.242098-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.20
+2025-04-23 09:55:47.242298-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.commands.0x1378f5c12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea6-ctrl-socket
+2025-04-23 09:55:47.242375-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.10
+2025-04-23 09:55:47.243098-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.lease-cmds-hooks.0x1378f5c12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:55:47.243191-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.40
+2025-04-23 09:55:47.243265-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.hooks.0x1378f5c12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:55:47.243337-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_ADD_IFACE listening on interface em1.30
+2025-04-23 09:55:47.243423-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcp6.0x1378f5c12000] DHCP6_CONFIG_COMPLETE DHCPv6 server has completed configuration: no IPv6 subnets!; DDNS: disabled
+2025-04-23 09:55:47.243492-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2025-04-23 09:55:47.244766-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcpsrv.0x1378f5c12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp6.leases persist=true type=memfile universe=6
+2025-04-23 09:55:47.244923-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.commands.0x118b25e12000] COMMAND_ACCEPTOR_START Starting to accept connections via unix domain socket bound to /tmp/kea4-ctrl-socket
+2025-04-23 09:55:47.245196-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcpsrv.0x1378f5c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases.2
+2025-04-23 09:55:47.245883-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.lease-cmds-hooks.0x118b25e12000] LEASE_CMDS_INIT_OK loading Lease Commands hooks library successful
+2025-04-23 09:55:47.246060-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcpsrv.0x1378f5c12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp6.leases
+2025-04-23 09:55:47.246137-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.hooks.0x118b25e12000] HOOKS_LIBRARY_LOADED hooks library /usr/local/lib/kea/hooks/libdhcp_lease_cmds.so successfully loaded
+2025-04-23 09:55:47.246268-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcpsrv.0x1378f5c12000] DHCPSRV_MEMFILE_BUILD_EXTENDED_INFO_TABLES6 building extended info tables saw 0 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases were entered into tables
+2025-04-23 09:55:47.246353-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcp4.0x118b25e12000] DHCP4_CONFIG_COMPLETE DHCPv4 server has completed configuration: added IPv4 subnets: 5; DDNS: disabled
+2025-04-23 09:55:47.246469-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcpsrv.0x1378f5c12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:55:47.247832-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_MEMFILE_DB opening memory file lease database: name=/var/lib/kea/dhcp4.leases persist=true type=memfile universe=4
+2025-04-23 09:55:47.248209-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcp6.0x1378f5c12000] DHCP6_USING_SERVERID server is using server-id 00:01:00:06:2f:9a:e6:b7:08:00:27:42:16:cf and stores in the file /var/db/kea/kea-dhcp6-serverid
+2025-04-23 09:55:47.248437-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases.2
+2025-04-23 09:55:47.248594-04:00 	kea-dhcp6 	81332 	WARN [kea-dhcp6.dhcpsrv.0x1378f5c12000] DHCPSRV_NO_SOCKETS_OPEN no interface configured to listen to DHCP traffic
+2025-04-23 09:55:47.248892-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_MEMFILE_LEASE_FILE_LOAD loading leases from file /var/lib/kea/dhcp4.leases
+2025-04-23 09:55:47.249130-04:00 	kea-dhcp6 	81332 	WARN [kea-dhcp6.dhcp6.0x1378f5c12000] DHCP6_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:55:47.249417-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_MEMFILE_EXTRACT_EXTENDED_INFO4 extracting extended info saw 1 leases, extended info sanity checks modified 0 / updated 0 leases and 0 leases have relay or remote id
+2025-04-23 09:55:47.249463-04:00 	kea-dhcp6 	81332 	INFO [kea-dhcp6.dhcp6.0x1378f5c12000] DHCP6_STARTED Kea DHCPv6 server version 2.4.0 started
+2025-04-23 09:55:47.249463-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_MEMFILE_LFC_SETUP setting up the Lease File Cleanup interval to 3600 sec
+2025-04-23 09:55:47.255032-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.10.0/24
+2025-04-23 09:55:47.255132-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.20.0/24
+2025-04-23 09:55:47.255199-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.11.0/24
+2025-04-23 09:55:47.255340-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.40.0/24
+2025-04-23 09:55:47.255404-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e12000] DHCPSRV_CFGMGR_USE_ALLOCATOR using the iterative allocator for V4 leases in subnet 10.10.30.0/24
+2025-04-23 09:55:47.256493-04:00 	kea-dhcp4 	81053 	WARN [kea-dhcp4.dhcp4.0x118b25e12000] DHCP4_MULTI_THREADING_INFO enabled: yes, number of threads: 2, queue size: 64
+2025-04-23 09:55:47.256671-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcp4.0x118b25e12000] DHCP4_STARTED Kea DHCPv4 server version 2.4.0 started
+2025-04-23 09:57:32.688077-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 09:59:41.607586-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:01:37.453169-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:03:29.255754-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:05:25.028853-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:06:36.474179-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.commands.0x118b25e12000] COMMAND_RECEIVED Received command 'lease4-get-all'
+2025-04-23 10:06:39.710055-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.commands.0x118b25e12000] COMMAND_RECEIVED Received command 'lease4-get-all'
+2025-04-23 10:07:15.365669-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:09:22.338041-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:10:29.876882-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e16600] EVAL_RESULT Expression pool_lan_0 evaluated to 1
+2025-04-23 10:10:29.876967-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e16600] EVAL_RESULT Expression pool_opt1_0 evaluated to 1
+2025-04-23 10:10:29.876992-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e16600] EVAL_RESULT Expression pool_opt2_0 evaluated to 1
+2025-04-23 10:10:29.877016-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e16600] EVAL_RESULT Expression pool_opt4_0 evaluated to 1
+2025-04-23 10:10:29.877040-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.dhcpsrv.0x118b25e16600] EVAL_RESULT Expression pool_opt3_0 evaluated to 1
+2025-04-23 10:10:29.877809-04:00 	kea-dhcp4 	81053 	INFO [kea-dhcp4.leases.0x118b25e16600] DHCP4_LEASE_ALLOC [hwtype=1 08:00:27:f6:5f:b9], cid=[01:08:00:27:f6:5f:b9], tid=0x2f2e1e4a: lease 10.10.10.10 has been allocated for 7200 seconds
+2025-04-23 10:11:22.739089-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:13:32.638387-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:15:42.617802-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:17:31.737566-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:19:22.359135-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:21:15.528892-04:00 	dhcp6c 	55638 	Sending Solicit
+2025-04-23 10:23:18.864091-04:00 	dhcp6c 	55638 	Sending Solicit 
