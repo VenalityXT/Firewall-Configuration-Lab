@@ -1,0 +1,87 @@
+# 🧱 pfSense Setup
+
+A step-by-step guide to installing and configuring **pfSense CE** as the core firewall in a virtualized home lab, including WAN/LAN setup and initial hardening.
+
+---
+
+## 📦 Requirements
+
+- **VirtualBox** (or compatible hypervisor)
+- **pfSense ISO**
+- At least **2 virtual NICs** (1 for WAN, 1 for LAN/VLAN trunk)
+- Optional: Additional NIC for true DMZ isolation via physical disk mapping
+
+---
+
+## 🖥️ Create the pfSense Virtual Machine
+
+1. **Create New VM**:
+   - Name: `pfSense`
+   - Type: `BSD`, Version: `FreeBSD (64-bit)`
+   - Memory: ≥ 2048 MB
+   - Disk: Dynamically allocated, ≥ 10 GB
+
+2. **Attach pfSense ISO** to the virtual CD/DVD drive.
+
+3. **Configure Network Adapters**:
+   - **Adapter 1 (WAN)**: NAT
+   - **Adapter 2 (LAN)**: Internal Network (`intnet`)
+
+---
+
+## 🧪 pfSense Installation
+
+1. Boot the VM from ISO.
+2. Choose **Install pfSense** → Accept defaults.
+3. Select `Auto (UFS)` or `ZFS` for disk partitioning.
+4. Wait for installation to complete → Reboot (remove ISO).
+
+Note:
+If you don't forcefully inject the ISO after you finish configuring pfSense it will automatically reboot into the setup chain again.
+
+---
+
+## 🌐 Initial Interface Assignment
+
+On reboot:
+
+1. **Assign interfaces**:
+   - WAN → `em0` (attached to NAT)
+   - LAN → `em1` (internal)
+
+2. Confirm assignments when prompted.
+
+3. You should see:
+   ```
+   WAN  -> 192.168.x.x (from NAT DHCP)
+   LAN  -> 192.168.1.1
+   ```
+
+---
+
+## 🔐 First-Time Web Login
+
+1. On a VM or host with access to LAN:
+   - Open browser → go to [http://192.168.1.1](http://192.168.1.1)
+   - Username: `admin`
+   - Password: `pfsense`
+
+2. Complete the **pfSense setup wizard**:
+   - Change hostname, DNS, and admin password
+   - Configure WAN as DHCP (default)
+   - Set LAN IP manually (e.g., `10.10.10.1/24`)
+
+---
+
+## 🚧 Basic Hardening & Tweaks
+
+- **Change admin password**
+- Disable **anti-lockout rule** only after enabling alternate access
+- Enable **SSH** (optional, with key-based login)
+- Apply latest updates via System → Update
+
+---
+
+## 📌 Next Steps
+
+➡️ Continue to [vlan-setup.md](./vlan-setup.md) to configure trunked VLANs and internal network segmentation.
