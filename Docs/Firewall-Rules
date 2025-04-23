@@ -22,12 +22,6 @@ A detailed guide to implementing a **default-deny firewall strategy** in pfSense
 
 ---
 
-## 🛡️ VLAN Firewall Rules
-
-Below are example rules for each VLAN interface configured in pfSense under **Firewall > Rules**:
-
----
-
 ### 🔹 VLAN 10: Client Zone
 [Insert Image]
 
@@ -48,7 +42,7 @@ Below are example rules for each VLAN interface configured in pfSense under **Fi
 
 ---
 
-### 🔁 VPN Access (Optional Rule Group)
+### 🔁 VPN Access
 [Insert Image]
 
 ---
