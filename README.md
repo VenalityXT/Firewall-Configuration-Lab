@@ -2,8 +2,6 @@
 
 A virtualized, security-focused lab environment designed using **pfSense** to simulate enterprise-grade network segmentation, remote access, monitoring, and backup systems using only free tools in a virtualized environment.
 
----
-
 ## 📚 Table of Contents
 
 - [🧰 Project Overview](#-project-overview)
