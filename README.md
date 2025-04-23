@@ -1,99 +1,142 @@
-# **Network Lab Setup**
+# pfSense Home Lab: Secure Network Simulation
 
-This repository contains the configuration and automation scripts for setting up and managing a network lab. The lab is built using **pfSense** as a firewall, **VLANs** for network segmentation, **VPN** for remote access, and various automation and monitoring tools for security and performance.
+A virtualized, security-focused lab environment designed using **pfSense** to simulate enterprise-grade network segmentation, remote access, monitoring, and backup systems using only free tools in a virtualized environment.
 
-## **Table of Contents**
-- [Project Overview](#project-overview)
-- [Setup Guide](#setup-guide)
-  - [Requirements](#requirements)
-  - [Steps to Get Started](#steps-to-get-started)
-  - [Configuring pfSense](#configuring-pfsense)
-  - [Testing and Validation](#testing-and-validation)
-- [Scripts](#scripts)
-- [Configuration Files](#configuration-files)
-- [Backup and Logging](#backup-and-logging)
-- [Security Best Practices](#security-best-practices)
-- [Monitoring and Logging](#monitoring-and-logging)
-- [How to Contribute](#how-to-contribute)
-- [License](#license)
+---
 
-## **Project Overview**
+## 📚 Table of Contents
 
-The goal of this project is to simulate a secure network environment with proper segmentation, realistic configurations, and best practices for network security. This setup is useful for learning purposes and testing different network configurations without the need for physical hardware.
+- [🧰 Project Overview](#-project-overview)
+  - [🔑 Key Components](#-key-components)
+- [🛠️ Network Lab Setup](#️-network-lab-setup)
+- [🌐 Network Layout](#-network-layout)
+- [🧩 VLAN Overview](#-vlan-overview)
+- [🔥 Firewall Philosophy](#-firewall-philosophy)
+- [🛡️ VPN Configuration (OpenVPN)](#️-vpn-configuration-openvpn)
+- [📊 Monitoring & Logging](#-monitoring--logging)
+- [💾 Backup Strategy](#-backup-strategy)
+- [🔐 Security Best Practices](#-security-best-practices)
+- [📂 Repo Structure](#-repo-structure)
+- [🔎 Why This Lab?](#-why-this-lab)
+- [📝 License](#-license)
 
-Key components of the network lab:
-- **pfSense**: Used as the firewall and router, managing traffic between VLANs, WAN, and LAN.
-- **VLANs**: Segmented network zones (Client, IoT, Server, DMZ) to isolate and secure different types of traffic.
-- **VPN (OpenVPN)**: Remote access to the network for secure, encrypted connections.
-- **Monitoring and Logging**: Tools to monitor the network and track activity for security auditing.
-- **Backup Automation**: Automated backup scripts for pfSense configurations to ensure recovery in case of failure.
+---
 
-## **Setup Guide**
+## 🧰 Project Overview
 
-### **Requirements**
-- VirtualBox or similar virtualization software for creating virtual machines.
-- pfSense installed on a virtual machine (VM) to act as the firewall.
-- Ubuntu or any Linux-based system for setting up supporting tools.
-- A basic understanding of networking, VLANs, and firewalls.
+This lab project creates a fully virtual network using **pfSense** and **Ubuntu** clients to simulate segmented, secure enterprise networks with real-world policies and tooling.
 
-### **Steps to Get Started**
-1. Clone the repository to your local machine:
-   git clone https://github.com/yourusername/network-lab.git
-   cd network-lab
+### 🔑 Key Components
 
-2. Set up your virtual machines (VMs) as outlined in the **docs/pfSense-setup.md** file. This includes:
-   - Configuring the VM for pfSense.
-   - Installing pfSense and configuring interfaces.
-   - Creating VLANs for network segmentation and assigning them to the appropriate interfaces.
+- **Firewall**: pfSense CE
+- **Virtualization**: VirtualBox
+- **Client/Server OS**: Ubuntu
+- **DHCP**: Kea DHCP
+- **VPN**: OpenVPN for secure remote access
+- **Monitoring**: SNMP modules + local logging
+- **Backup**: Cron job automated pfSense config dumps
+- **Diagramming**: Lucidchart
 
-3. Follow the steps for configuring your network as described in the **docs/VLAN-setup.md** and ensure that each VLAN is isolated with proper firewall rules to improve security.
+---
 
-4. Once pfSense and VLANs are configured, set up OpenVPN for remote access by following the **docs/OpenVPN-setup.md**.
+## 🛠️ Network Lab Setup
 
-5. Automate pfSense backups with the script provided in **scripts/backup.sh**.
+1. **Install VirtualBox** and set up a virtual network using internal adapters.
+2. **Install pfSense CE** with 2 interfaces: WAN (DHCP), LAN (10.10.10.1/24).
+3. **Create VLANs** for segmented traffic (Client, Server, IoT, DMZ).
+4. **Install Ubuntu VM** as a client device and set up VLAN tagging.
+5. **Configure firewall rules** on each interface with a default-deny strategy.
+6. **Set up OpenVPN** for remote access with certs and user auth.
+7. **Enable SNMP** for monitoring + configure system logs.
+8. **Automate pfSense backups** via cron on the Ubuntu box.
+9. **Secure all defaults** and isolate IoT + DMZ traffic.
 
-### **Configuring pfSense**
-1. Configure the interfaces in pfSense, ensuring they are connected to the correct VLANs.
-2. Set up static IP addresses and DHCP servers where necessary.
-3. Configure firewall rules for each VLAN to control traffic flow and ensure proper network segmentation.
-4. Set up logging and monitoring services in pfSense for network activity tracking and security auditing.
+---
 
-### **Testing and Validation**
-1. Use ping tests and network tools to validate connectivity between VLANs, ensuring segmentation is effective.
-2. Test remote access by connecting to pfSense via OpenVPN from an external device.
-3. Verify automated backups are being created by checking the backup directory.
-4. Test logging and monitoring services to ensure network activity is being recorded accurately.
+## 🌐 Network Layout
+![Network Diagram](https://github.com/user-attachments/assets/c3a850a0-6082-4874-9cde-dad1f822edb9)
 
-## **Scripts**
+          [Internet]
+              │
+          [WAN - DHCP]
+              │
+          [pfSense Firewall]
+              │
+      ┌───────┼────────┬────────┬────────┐
+      │       │        │        │
+   VLAN10   VLAN20   VLAN30   VLAN40
+   Client   Server    IoT      DMZ
+10.10.10.0 10.10.20.0 10.10.30.0 10.10.40.0
 
-- **backup.sh**: Automates the backup process for pfSense configurations.
+---
 
-## **Configuration Files**
+## 🧩 VLAN Overview
 
-This section contains references to the configuration files used in pfSense and other systems:
-- **pfSense Configuration**: Saved as XML files for easy restoration.
-- **OpenVPN Configurations**: Stored in `openvpn/` directory.
-- **VLAN Setup**: All VLAN configuration scripts are in the `vlan/` folder.
+| VLAN  | Name        | Purpose                      | Subnet         |
+|-------|-------------|------------------------------|----------------|
+| 10    | Client Zone | Laptops, Workstations        | 10.10.10.0/24  |
+| 20    | Server Zone | Internal services & updates  | 10.10.20.0/24  |
+| 30    | IoT Zone    | Smart devices, printers      | 10.10.30.0/24  |
+| 40    | DMZ         | Public-facing services       | 10.10.40.0/24  |
 
-## **Backup and Logging**
+---
 
-Automated backups are configured using cron jobs. This ensures that configurations and logs are regularly saved and can be restored if needed.
+## 🔥 Firewall Philosophy
 
-- **Backup Location**: `/path/to/backups/`
-- **Backup Interval**: Daily at 3 AM.
+- **Default deny** on all VLANs
+- **Allow minimal egress** (DNS, HTTP/HTTPS)
+- **Explicit inter-VLAN blocking** (IoT can't access LAN, etc.)
+- **DMZ internet-only, no internal access**
+- **VPN can access LAN/Server Zone**
 
-Logs are stored in a centralized logging system. Access logs and firewall logs are monitored using **SNMP** and **syslog** services for analysis.
+---
 
-## **Security Best Practices**
+## 🛡️ VPN Configuration (OpenVPN)
 
-- **Network Segmentation**: Ensure that VLANs are properly configured to separate sensitive data from other network traffic.
-- **Firewall Rules**: Review and update firewall rules to allow only necessary traffic.
-- **Regular Updates**: Keep pfSense and related software updated to patch any vulnerabilities.
+- **Mode**: Remote Access (SSL/TLS + User Auth)
+- **Tunnel Network**: 10.100.0.0/24
+- **Local Networks Allowed**: 10.10.10.0/24, 10.10.20.0/24
+- **TLS Certs**: CA + user certs
+- **DNS Push**: Enabled
+- **Compression**: Disabled
+- **Client Comm**: Allowed
+- **Duplicate Clients**: Not allowed
+- **Hardware Crypto**: AES-NI if supported
 
-## **Monitoring and Logging**
+---
 
-The network is continuously monitored using **SNMP** and other tools for performance and security analysis. Logs are stored in a centralized location and reviewed periodically.
+## 📊 Monitoring & Logging
 
-## **How to Contribute**
+- SNMP on pfSense:
+  - Port: 161
+  - Community: public
+  - Modules: pf, host resources, ucd, netgraph
+- Logs stored in pfSense WebGUI
+- Optional remote syslog or email alerts
 
-Feel free to fork the repository, submit issues, and create pull requests. All contributions are welcome to improve the setup or add new features.
+---
+
+## 💾 Backup Strategy
+
+- **Cron job** pulls pfSense config XML nightly
+- Uses `curl` with API key/token (or creds)
+- Saves backups with timestamp to Ubuntu:
+  - `/home/user/pfsense_backups/`
+- Easy rollback via WebGUI
+
+---
+
+## 🔐 Security Best Practices
+
+- Block private/reserved IPs on WAN
+- No unnecessary services running
+- Disable NAT reflection
+- Use strong certs for VPN
+- Isolate IoT and DMZ
+- Use logging for rule hits and interface events
+- Keep all packages and firmware up to date
+
+---
+
+## 📂 Repo Structure
+
