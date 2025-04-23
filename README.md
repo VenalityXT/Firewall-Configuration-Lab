@@ -97,7 +97,3 @@ The network is continuously monitored using **SNMP** and other tools for perform
 ## **How to Contribute**
 
 Feel free to fork the repository, submit issues, and create pull requests. All contributions are welcome to improve the setup or add new features.
-
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
