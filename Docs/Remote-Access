@@ -1,0 +1,119 @@
+# 🛡️ Remote Access (OpenVPN)
+
+Configure secure remote access to your virtual lab using **OpenVPN** in pfSense. This setup supports both user authentication and TLS certificate validation, providing encrypted access to internal VLANs (Client & Server zones).
+
+---
+
+## 🔐 VPN Architecture
+
+- **Type**: Remote Access (SSL/TLS + User Auth)
+- **Tunnel Network**: `10.100.0.0/24`
+- **Local Networks Accessible**:
+  - `10.10.10.0/24` (LAN)
+  - `10.10.11.0/24` (Client)
+  - `10.10.20.0/24` (Server)
+- **Excluded Zones**: IoT (30), DMZ (40)
+
+---
+
+## 🧱 Step-by-Step Configuration
+
+### 1️⃣ Certificate Authority & Certificates
+
+1. Go to **System > Cert Manager > CAs**
+   - Add new CA: `OpenVPN-CA`
+2. Go to **System > Cert Manager > Certificates**
+   - Create Server Certificate: `OpenVPN-Server`
+   - Create User Certificate: `username-cert`
+
+---
+
+### 2️⃣ User Setup
+
+- Go to **System > User Manager**
+- Add a new user:
+  - Username + password
+  - Assign `username-cert`
+  - (Optional) Create user group for VPN clients
+
+---
+
+### 3️⃣ Create OpenVPN Server
+
+Navigate to **VPN > OpenVPN > Servers**, then **Add**:
+
+| Field                     | Value                         |
+|--------------------------|-------------------------------|
+| Server Mode              | Remote Access (SSL/TLS + Auth)|
+| Protocol                 | UDP                           |
+| Device Mode              | tun                           |
+| Interface                | WAN                           |
+| Local Port               | 1194                          |
+| TLS Auth                 | Enable                        |
+| Peer Certificate Revocation | Enable                    |
+| Server Certificate       | `OpenVPN-Server`              |
+| DH Parameter Length      | 2048                          |
+| Tunnel Network           | `10.100.0.0/24`               |
+| Local Network(s)         | `10.10.10.0/24, 10.10.11.0/24, 10.10.20.0/24` |
+| Compression              | Disabled                      |
+| Inter-Client Comm        | Enabled                       |
+| Duplicate Connections    | Not allowed                   |
+| Auth Method              | Local User Access             |
+| Encryption               | AES-256-CBC + SHA256          |
+| Hardware Crypto          | AES-NI if supported           |
+
+---
+
+### 4️⃣ Firewall Rules for VPN
+
+Under **Firewall > Rules > OpenVPN**, add:
+
+| Action | Protocol | Source       | Destination     | Description          |
+|--------|----------|--------------|------------------|----------------------|
+| Pass   | Any      | OpenVPN net  | VLAN10, VLAN20   | Allow access         |
+| Block  | Any      | OpenVPN net  | VLAN30, VLAN40   | Restrict IoT/DMZ     |
+
+---
+
+### 5️⃣ Export Client Config
+
+Install the **pfSense OpenVPN Client Export** package:
+
+- Go to **System > Package Manager**
+- Install: `openvpn-client-export`
+- Then navigate to **VPN > OpenVPN > Client Export**
+- Download `.ovpn` config bundle for your user
+
+---
+
+## 🧪 Testing the Connection
+
+1. Install the OpenVPN client (Windows, macOS, Linux)
+2. Import `.ovpn` profile
+3. Connect and verify:
+   - VPN gets IP from `10.100.0.0/24`
+   - Can ping/access `10.10.11.1` and `10.10.20.1`
+   - Cannot access IoT/DMZ networks
+
+---
+
+## 🔐 Tips & Hardening
+
+- Use long passwords and strong certs
+- Disable unused client profiles
+- Review logs regularly in **Status > System Logs > OpenVPN**
+- Rotate certs and credentials periodically
+
+---
+
+## 🧩 Related Topics
+
+- Add 2FA (TOTP) via `System > User Manager > Authentication Servers`
+- Configure port forwarding through VPN if hosting services externally
+
+---
+
+## ✅ Done!
+
+Your remote access VPN is now secured and live. 
+```Remote workers rejoice!```
