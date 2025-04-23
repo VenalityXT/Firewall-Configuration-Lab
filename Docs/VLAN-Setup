@@ -1,0 +1,78 @@
+# 🧩 VLAN Setup
+
+A detailed guide to creating VLAN interfaces in **pfSense**, assigning them to internal networks, and preparing your Ubuntu VM clients for tagged VLAN traffic.
+
+---
+
+## 📦 Requirements
+
+- pfSense set up with at least one LAN interface
+- VirtualBox with internal network support (`intnet`)
+- Ubuntu VM(s) for VLAN testing
+- Optional: Virtual switch or managed bridge simulation
+
+---
+
+## 🌐 VLAN Design
+
+| VLAN ID | Name        | Purpose                      | Subnet         |
+|---------|-------------|------------------------------|----------------|
+| 10      | Client Zone | Laptops, Workstations        | 10.10.11.0/24  |
+| 20      | Server Zone | Internal services & updates  | 10.10.20.0/24  |
+| 30      | IoT Zone    | Smart devices, printers      | 10.10.30.0/24  |
+| 40      | DMZ         | Public-facing services       | 10.10.40.0/24  |
+
+---
+
+## 🧱 Step-by-Step: pfSense VLAN Configuration
+
+1. **Login to pfSense WebGUI** → Go to **Interfaces > Assignments**
+2. Click the **VLANs** tab → Add each VLAN:
+   - Parent Interface: LAN
+   - VLAN Tag: `10`, `20`, `30`, `40`
+   - Description: `VLAN10-Client`, etc.
+
+3. Go back to the **Interface Assignments** tab:
+   - Add each VLAN as a new interface (e.g., `OPT1`, `OPT2`, etc.)
+   - Rename them for clarity (Client, Server, IoT, DMZ)
+
+4. For each VLAN interface:
+   - Enable interface
+   - Static IPv4 Configuration (e.g., `10.10.11.1/24` for VLAN 10)
+   - Disable IPv6 (optional)
+   - Save and Apply
+
+---
+
+## 🛜 Configure DHCP for VLANs
+
+1. Navigate to **Services > DHCP Server**
+2. Select each VLAN interface tab (Client, Server, IoT, DMZ)
+3. Enable DHCP and set ranges:
+   - Example for VLAN 10: Range `10.10.11.100 - 10.10.11.200`
+
+---
+
+## 🧪 VirtualBox Trunk Configuration
+
+To allow VLAN tags through VirtualBox:
+
+1. pfSense LAN NIC is already connected to `Internal Network` (e.g., `intnet`).
+2. **All other VMs** (Ubuntu, etc.) should connect to the same network (`intnet`) and handle VLAN tagging inside their OS.
+
+---
+
+## 🧾 Ubuntu VLAN Client Setup (Tagged Interfaces)
+
+On the Ubuntu VM:
+
+```bash
+sudo apt update
+sudo apt install vlan net-tools
+sudo modprobe 8021q
+```
+
+Create a VLAN interface (example for VLAN 10):
+
+```bash
+sudo ip link add link enp0s3 name enp0s3.10 type vlan id 10
