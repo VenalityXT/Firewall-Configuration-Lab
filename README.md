@@ -11,7 +11,7 @@ Simulate a real-world home or small office network using pfSense to:
 Demonstrates an understanding of core networking, access control, and secure architecture.                                                                                                                                                   
 
 ## Network Design
-![Network Diagram](/network-diagram.png](https://lucid.app/lucidchart/b46708d7-16ef-45a6-9a6c-d3ee17135c6a/edit?viewport_loc=-263%2C132%2C2217%2C1031%2C0_0&invitationId=inv_0b3062fe-9251-4e60-bebf-9ab688ca3e10))
+![Network Diagram](https://github.com/user-attachments/assets/8bd5e41b-594e-4e78-aa7b-bfdf9f1e6b2a)
 
 - LAN 1: 192.168.10.0/24 (Trusted - Internal Servers)
 - LAN 2: 192.168.20.0/24 (Users/Clients)
