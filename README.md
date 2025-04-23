@@ -60,7 +60,7 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 | VLAN  | Name        | Purpose                      | Subnet         |
 |-------|-------------|------------------------------|----------------|
-| 10    | Client Zone | Laptops, Workstations        | 10.10.10.0/24  |
+| 10    | Client Zone | Laptops, Workstations        | 10.10.11.0/24  |
 | 20    | Server Zone | Internal services & updates  | 10.10.20.0/24  |
 | 30    | IoT Zone    | Smart devices, printers      | 10.10.30.0/24  |
 | 40    | DMZ         | Public-facing services       | 10.10.40.0/24  |
