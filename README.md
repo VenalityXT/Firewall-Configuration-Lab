@@ -38,105 +38,66 @@ Key components of the network lab:
 
 ### **Steps to Get Started**
 1. Clone the repository to your local machine:
-   ```bash
    git clone https://github.com/yourusername/network-lab.git
    cd network-lab
-Set up your virtual machines (VMs) as outlined in the docs/pfSense-setup.md file. This includes:
 
-Configuring the VM for pfSense.
+2. Set up your virtual machines (VMs) as outlined in the **docs/pfSense-setup.md** file. This includes:
+   - Configuring the VM for pfSense.
+   - Installing pfSense and configuring interfaces.
+   - Creating VLANs for network segmentation and assigning them to the appropriate interfaces.
 
-Installing pfSense and configuring interfaces.
+3. Follow the steps for configuring your network as described in the **docs/VLAN-setup.md** and ensure that each VLAN is isolated with proper firewall rules to improve security.
 
-Creating VLANs and assigning IPs to each VLAN.
+4. Once pfSense and VLANs are configured, set up OpenVPN for remote access by following the **docs/OpenVPN-setup.md**.
 
-Configure pfSense, VLANs, firewall rules, and VPN following the detailed guides in the docs/ directory.
+5. Automate pfSense backups with the script provided in **scripts/backup.sh**.
 
-Run the automation scripts located in the scripts/ directory to create VLANs, set up firewall rules, and automate tasks such as backups.
+### **Configuring pfSense**
+1. Configure the interfaces in pfSense, ensuring they are connected to the correct VLANs.
+2. Set up static IP addresses and DHCP servers where necessary.
+3. Configure firewall rules for each VLAN to control traffic flow and ensure proper network segmentation.
+4. Set up logging and monitoring services in pfSense for network activity tracking and security auditing.
 
-bash
-Copy
-Edit
-./scripts/automation/setup_vlans.sh
-Validate your pfSense configuration with ping tests and VPN access.
+### **Testing and Validation**
+1. Use ping tests and network tools to validate connectivity between VLANs, ensuring segmentation is effective.
+2. Test remote access by connecting to pfSense via OpenVPN from an external device.
+3. Verify automated backups are being created by checking the backup directory.
+4. Test logging and monitoring services to ensure network activity is being recorded accurately.
 
-##Configuring pfSense
-###Initial Setup:
+## **Scripts**
 
-Follow the instructions in docs/pfSense-setup.md to configure the WAN and LAN interfaces.
+- **backup.sh**: Automates the backup process for pfSense configurations.
 
-Configure DHCP for each VLAN using the Kea DHCP option in pfSense.
+## **Configuration Files**
 
-Set up firewall rules for each VLAN to control access between the zones.
+This section contains references to the configuration files used in pfSense and other systems:
+- **pfSense Configuration**: Saved as XML files for easy restoration.
+- **OpenVPN Configurations**: Stored in `openvpn/` directory.
+- **VLAN Setup**: All VLAN configuration scripts are in the `vlan/` folder.
 
-VLAN Configuration:
+## **Backup and Logging**
 
-Create VLANs on pfSense (VLAN 10, VLAN 20, VLAN 30, VLAN 40).
+Automated backups are configured using cron jobs. This ensures that configurations and logs are regularly saved and can be restored if needed.
 
-Assign appropriate IP address ranges for each VLAN.
+- **Backup Location**: `/path/to/backups/`
+- **Backup Interval**: Daily at 3 AM.
 
-Set up the DHCP server for each VLAN.
+Logs are stored in a centralized logging system. Access logs and firewall logs are monitored using **SNMP** and **syslog** services for analysis.
 
-VPN Configuration:
+## **Security Best Practices**
 
-Follow the instructions in docs/openvpn-setup.md to set up OpenVPN for remote access.
+- **Network Segmentation**: Ensure that VLANs are properly configured to separate sensitive data from other network traffic.
+- **Firewall Rules**: Review and update firewall rules to allow only necessary traffic.
+- **Regular Updates**: Keep pfSense and related software updated to patch any vulnerabilities.
 
-Ensure that the VPN server is properly configured to allow remote clients access to the necessary resources.
+## **Monitoring and Logging**
 
-Testing and Validation
-Ping Tests:
+The network is continuously monitored using **SNMP** and other tools for performance and security analysis. Logs are stored in a centralized location and reviewed periodically.
 
-Ping devices across VLANs to ensure they are correctly isolated.
+## **How to Contribute**
 
-Test the ability to ping from the LAN to the WAN, and from each VLAN to the internet.
+Feel free to fork the repository, submit issues, and create pull requests. All contributions are welcome to improve the setup or add new features.
 
-VPN Access:
+## **License**
 
-Verify VPN connectivity by connecting with an OpenVPN client.
-
-Ensure the VPN tunnel works and only authorized devices can connect.
-
-Firewall Rules Verification:
-
-Test if the firewall rules are correctly enforcing security policies.
-
-Attempt to access restricted zones (e.g., DMZ to LAN, IoT to Server) to verify that traffic is blocked as expected.
-
-Scripts
-Backup and Automation:
-scripts/backup/pfSense_backup.sh: A script to automate backups of pfSense configurations.
-
-scripts/automation/cronjobs.sh: A script to set up cron jobs for regular backup schedules.
-
-scripts/network/create-vlans.sh: Script to create and configure VLANs on pfSense.
-
-Network Configuration:
-Create VLANs: Scripts for automating VLAN setup.
-
-Firewall Rules: Customizable rules for securing VLANs and controlling traffic.
-
-Configuration Files
-All important configuration files for pfSense, DHCP, VLANs, and VPN are stored in the configs/ folder:
-
-pfSense-config.xml: Exported pfSense configuration file.
-
-dhcp-kea-config.conf: Kea DHCP configuration for automated IP allocation.
-
-firewall-rules.conf: Firewall rules for each VLAN, including LAN, DMZ, IoT, and Server zones.
-
-openvpn-config.ovpn: OpenVPN client configuration for remote access.
-
-Backup and Logging
-All backup scripts are in the scripts/backup/ folder.
-
-Logs of pfSense operations, backups, and VPN connections are saved in logs/.
-
-To automate backups, we use cron jobs that run daily, weekly, and monthly backups of the pfSense configuration.
-
-Security Best Practices
-Regularly update pfSense and other systems.
-
-Isolate IoT devices in their own VLAN to reduce the attack surface.
-
-Use VPN for remote access, and restrict remote access to only authorized users.
-
-Implement detailed firewall rules to limit cross-VLAN communication based on your needs.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
