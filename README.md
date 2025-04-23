@@ -95,7 +95,7 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 - SNMP on pfSense:
   - Port: 161
-  - Community: public
+  - Community: MySecureROComm_2025
   - Modules: pf, host resources, ucd, netgraph
 - Logs stored in pfSense WebGUI
 - Optional remote syslog or email alerts
