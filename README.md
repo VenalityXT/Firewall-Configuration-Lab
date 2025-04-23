@@ -54,18 +54,6 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 ## 🌐 Network Layout
 ![Network Diagram](https://github.com/user-attachments/assets/c3a850a0-6082-4874-9cde-dad1f822edb9)
 
-          [Internet]
-              │
-          [WAN - DHCP]
-              │
-          [pfSense Firewall]
-              │
-      ┌───────┼────────┬────────┬────────┐
-      │       │        │        │
-   VLAN10   VLAN20   VLAN30   VLAN40
-   Client   Server    IoT      DMZ
-10.10.10.0 10.10.20.0 10.10.30.0 10.10.40.0
-
 ---
 
 ## 🧩 VLAN Overview
