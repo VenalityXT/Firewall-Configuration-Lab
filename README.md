@@ -1,46 +1,36 @@
-# pfSense Home Lab - Network Segmentation Firewall Rules
+# **Network Lab Setup**
 
-### 🎯 Project Goal
-Simulate a real-world home or small office network using pfSense to:
+This repository contains the configuration and automation scripts for setting up and managing a network lab. The lab is built using **pfSense** as a firewall, **VLANs** for network segmentation, **VPN** for remote access, and various automation and monitoring tools for security and performance.
 
-• Implement network segmentation using VLANs or subnetting                                                                                                                                                                                         
-• Create and enforce firewall rules between networks                                                                                                                                                   
-• Configure services like DHCP, DNS, and NAT                                                                                                                                                   
-• Monitor and analyze traffic flows with tools like Wireshark                                                                                                                                                   
+## **Table of Contents**
+- [Project Overview](#project-overview)
+- [Network Architecture](#network-architecture)
+- [Setup Guide](#setup-guide)
+- [Scripts](#scripts)
+- [Configuration Files](#configuration-files)
+- [Backup and Logging](#backup-and-logging)
+- [Security Best Practices](#security-best-practices)
+- [Monitoring and Logging](#monitoring-and-logging)
+- [How to Contribute](#how-to-contribute)
+- [License](#license)
 
-Demonstrates an understanding of core networking, access control, and secure architecture.                                                                                                                                                   
+## **Project Overview**
 
-## Network Design
-![Network Diagram](https://github.com/user-attachments/assets/8bd5e41b-594e-4e78-aa7b-bfdf9f1e6b2a)
+The goal of this project is to simulate a secure network environment with proper segmentation, realistic configurations, and best practices for network security. This setup is useful for learning purposes and testing different network configurations without the need for physical hardware.
 
-- LAN 1: 192.168.10.0/24 (Trusted - Internal Servers)
-- LAN 2: 192.168.20.0/24 (Users/Clients)
-- Goal: Restrict LAN 2 from accessing LAN 1, but allow DNS & HTTP
+Key components of the network lab:
+- **pfSense**: Used as the firewall and router, managing traffic between VLANs, WAN, and LAN.
+- **VLANs**: Segmented network zones (Client, IoT, Server, DMZ) to isolate and secure different types of traffic.
+- **VPN (OpenVPN)**: Remote access to the network for secure, encrypted connections.
+- **Monitoring and Logging**: Tools to monitor the network and track activity for security auditing.
+- **Backup Automation**: Automated backup scripts for pfSense configurations to ensure recovery in case of failure.
 
-## Tools & Technologies
-- pfSense 2.7
-- VirtualBox or VMware
-- Ubuntu Server 22.04
-- Windows 10 VM
-- Wireshark (for traffic analysis)
+## **Network Architecture**
 
-## Key Features
-- VLAN/subnet-based network segmentation
-- Firewall rule enforcement
-- DHCP and DNS setup
-- Packet capture and traffic inspection
+The network is designed using several **VLANs** to separate traffic into different zones. The core components of the network include:
 
-## Repo Structure
-- `/firewall-rules`: Text-based copies of firewall configs and rationale
-- `/configurations`: DHCP, DNS, and pfSense config snippets
-- `/packet-captures`: Wireshark files (.pcapng) to analyze blocked/allowed traffic
-- `/screenshots`: UI configs for visual understanding
-- `/documentation`: Design decisions and traffic analysis reports
-
-## Future Additions
-- Add intrusion detection using Suricata or Snort
-- Add VPN access from external network
-- Automate log forwarding to a SIEM
-
-## Author Notes
-This project is part of a cybersecurity analyst prep series focused on building practical skills in networking, monitoring, and access control.
+- **WAN (Internet)**: The outside world, connected to pfSense.
+- **LAN (Client Zone)**: Internal network for end-user devices.
+- **VLAN 20 (Server Zone)**: For servers and critical infrastructure that require access from the LAN and other zones.
+- **VLAN 30 (IoT Zone)**: A separate network for Internet of Things (IoT) devices, isolated from sensitive devices.
+- **VLAN 40 (DMZ)**: Demilitarized zone for public-facing services, such as web servers or DNS servers, that need controlled access.
