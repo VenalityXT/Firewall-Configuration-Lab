@@ -13,10 +13,12 @@ A detailed guide to implementing a **default-deny firewall strategy** in pfSense
 - Enable **logging** on key rule actions
 
 ### WAN Firewall Rules
+[Insert Image]
+
 ---
 
 ### LAN Firewall Rules
----
+[Insert Image]
 
 ---
 
@@ -27,31 +29,26 @@ Below are example rules for each VLAN interface configured in pfSense under **Fi
 ---
 
 ### 🔹 VLAN 10: Client Zone
-
 [Insert Image]
 
 ---
 
 ### 🔹 VLAN 20: Server Zone
-
 [Insert Image]
 
 ---
 
 ### 🔹 VLAN 30: IoT Zone
-
 [Insert Image]
 
 ---
 
 ### 🔹 VLAN 40: DMZ
-
 [Insert Image]
 
 ---
 
 ### 🔁 VPN Access (Optional Rule Group)
-
 [Insert Image]
 
 ---
