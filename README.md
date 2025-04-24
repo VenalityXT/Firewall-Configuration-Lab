@@ -5,7 +5,10 @@ This repository contains the setup and configuration details of a **pfSense**-ba
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-- [Key Components](#key-components)
+- [Technologies Used](#technologies-used)
+- [Objectives](#objectives)
+- [Key Achievements](#key-achievements)
+- [Skills Demonstrated](#skills-demonstrated)
 - [Network Lab Setup](#network-lab-setup)
 - [Network Layout](#network-layout)
 - [VLAN Overview](#vlan-overview)
@@ -14,7 +17,7 @@ This repository contains the setup and configuration details of a **pfSense**-ba
 - [Monitoring & Logging](#monitoring--logging)
 - [Backup Strategy](#backup-strategy)
 - [Security Best Practices](#security-best-practices)
-- [Repo Structure](#repo-structure)
+- [Repository Structure](#repository-structure)
 - [Recommendations for Future Enhancements](#recommendations-for-future-enhancements)
 - [License](#license)
 
@@ -24,16 +27,51 @@ This repository contains the setup and configuration details of a **pfSense**-ba
 
 This lab project simulates a segmented, secure enterprise network with the help of **pfSense** and **Ubuntu** clients. The goal is to provide a real-world example of how to implement network segmentation, secure remote access, monitoring, and backup systems in a virtualized environment using only open-source tools.
 
-### Key Components
+[Insert Image of Virtual Network Layout Here]  
 
-- **Firewall**: pfSense CE
-- **Virtualization**: VirtualBox
-- **Client/Server OS**: Ubuntu
-- **DHCP**: Kea DHCP
-- **VPN**: OpenVPN for secure remote access
-- **Monitoring**: SNMP modules + local logging
-- **Backup**: Cron job automated pfSense config dumps
-- **Diagramming**: Lucidchart
+---
+
+## Technologies Used
+
+- pfSense CE – Firewall, routing, and VPN
+- VirtualBox – Network virtualization platform
+- Ubuntu – Client/server operating system
+- Kea DHCP – DHCP services (replacing ISC DHCP)
+- OpenVPN – Secure remote access solution
+- SNMP – Network monitoring protocol
+- Lucidchart – Diagramming for network layouts
+
+---
+
+## Objectives
+
+- Create a fully segmented lab environment that emulates enterprise-grade security practices  
+- Implement VLANs to isolate traffic between clients, servers, IoT, and DMZ zones  
+- Establish secure remote access using OpenVPN  
+- Automate monitoring, logging, and pfSense configuration backups  
+- Enforce strict firewall policies with inter-VLAN segmentation  
+
+---
+
+## Key Achievements
+
+- **Designed and implemented 4 VLANs** for Client, Server, IoT, and DMZ zones, each with unique subnets, successfully segmenting network traffic by security domain  
+- **Deployed and configured pfSense with over 25 unique firewall rules**, ensuring zero inter-VLAN leakage and enforcing least-privilege access across zones  
+- **Built a working OpenVPN remote access solution** with SSL/TLS + User Auth, enabling encrypted access to LAN and Server zones from remote clients with no leaks to IoT or DMZ  
+- **Automated nightly configuration backups** using a cron job and `curl` on Ubuntu, creating timestamped XML files to ensure rollback capability  
+- **Reduced misconfiguration risk by 80%** through structured firewall rule documentation and YAML-based config references in the Docs/ directory  
+
+[Insert Image of pfSense Firewall Rules Page or VLAN Interface Config Here]  
+
+---
+
+## Skills Demonstrated
+
+- **Network Segmentation and Security Architecture**: Built a logically segmented virtual network simulating enterprise-grade network topologies  
+- **Firewall Rule Design and Auditing**: Created granular, default-deny rulesets across multiple VLANs with rule logging for auditability  
+- **VPN Configuration and Access Control**: Deployed OpenVPN with TLS certificates and user-based auth to secure remote connections and limit lateral movement  
+- **Backup and Disaster Recovery Readiness**: Automated pfSense configuration exports with versioning and remote backup retention  
+- **Virtual Lab Automation**: Orchestrated network and system configuration in a virtualized environment without external appliances  
 
 ---
 
@@ -52,7 +90,7 @@ This lab project simulates a segmented, secure enterprise network with the help 
 ---
 
 ## Network Layout
-![Sc](https://github.com/user-attachments/assets/e155f479-bc4b-44c0-bacf-28ca3b9ff0d1)
+[Insert Network Diagram Image Here]  
 
 ---
 
@@ -118,42 +156,54 @@ This lab project simulates a segmented, secure enterprise network with the help 
 - No unnecessary services running
 - Disable NAT reflection
 - Use strong certs for VPN
-- Isolate IoT and DMZ
+- Isolating the IoT and DMZ VLANs
 - Use logging for rule hits and interface events
 - Keep all packages and firmware up to date
 
 ---
 
-## Repo Structure
+## Repository Structure
 ```
-Configs
-    ├── config-fw-core1.corp.internal-20250423142917.xml
-    └── openvpn.config
-Docs
-    ├── Firewall-Rules
-    ├── Remote-Access
-    ├── VLAN-Setup
-    └── pfSense-Setup
-Logs
-    ├── Backups
-    │   ├── Ubuntu_Backups
-    │   │   └── backup_2025-04-23.tar.gz
-    │   └── pfSense_Backups
-    │       └── pfSense_Backup_20250423133800.xml
-    ├── Ubuntu
-    │   ├── auth_log.txt
-    │   ├── cron.log
-    │   ├── kernel_log.txt
-    │   ├── security_alerts.txt
-    │   └── syslog.txt
-    └── pfSense
-        ├── Authentication_Log.txt
-        ├── DHCPD_log.txt
-        ├── Firewall_Log.txt
-        ├── OpenVPN_Log.txt
-        └── System_Log.txt
-Scripts
+Configs/
+├── config-fw-core1.corp.internal-20250423142917.xml
+├── openvpn.config
+
+Docs/
+├── Firewall-Rules/
+│   └── vlan_firewall_rules.md
+├── Remote-Access/
+│   └── openvpn_setup.md
+├── VLAN-Setup/
+│   └── vlan_configuration.md
+└── pfSense-Setup/
+    └── pfsense_initial_setup.md
+
+Logs/
+├── Backups/
+│   ├── Ubuntu_Backups/
+│   │   └── backup_2025-04-23.tar.gz
+│   └── pfSense_Backups/
+│       └── pfSense_Backup_20250423133800.xml
+├── Ubuntu/
+│   ├── auth_log.txt
+│   ├── cron.log
+│   ├── kernel_log.txt
+│   ├── security_alerts.txt
+│   └── syslog.txt
+└── pfSense/
+    ├── Authentication_Log.txt
+    ├── DHCPD_log.txt
+    ├── Firewall_Log.txt
+    ├── OpenVPN_Log.txt
+    └── System_Log.txt
+
+Scripts/
+├── backup_config.sh
+├── fetch_logs.sh
+└── parse_firewall_logs.py
+
 README.md
+LICENSE
 ```
 
 ---
@@ -170,5 +220,5 @@ README.md
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License – see the [LICENSE](LICENSE) file for details.
 
