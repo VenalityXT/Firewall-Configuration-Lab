@@ -52,7 +52,7 @@ This lab project simulates a segmented, secure enterprise network with the help 
 ---
 
 ## Network Layout
-[Insert Network Diagram Here]
+![Sc](https://github.com/user-attachments/assets/e155f479-bc4b-44c0-bacf-28ca3b9ff0d1)
 
 ---
 
