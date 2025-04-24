@@ -1,4 +1,4 @@
-# pfSense Home Lab: Secure Network Simulation
+# Firewall Configuration Home Lab: Secure Network Simulation
 
 This repository contains the setup and configuration details of a **pfSense**-based home lab designed to simulate a segmented, secure enterprise network using virtualization. The lab leverages **pfSense** for firewall and routing, **OpenVPN** for remote access, and **Ubuntu** for client systems, alongside a range of monitoring and backup strategies.
 
