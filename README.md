@@ -163,46 +163,49 @@ This lab project simulates a segmented, secure enterprise network with the help 
 
 ## Repository Structure
 ```
-Configs/
-├── config-fw-core1.corp.internal-20250423142917.xml
-├── openvpn.config
+Firewall-Configuration-Lab/
 
-Docs/
-├── Firewall-Rules/
-│   └── vlan_firewall_rules.md
-├── Remote-Access/
-│   └── openvpn_setup.md
-├── VLAN-Setup/
-│   └── vlan_configuration.md
-└── pfSense-Setup/
-    └── pfsense_initial_setup.md
+├── Configs/
+│   ├── config-fw-core1.corp.internal-20250423142917.xml
+│   └── openvpn.config
 
-Logs/
-├── Backups/
-│   ├── Ubuntu_Backups/
-│   │   └── backup_2025-04-23.tar.gz
-│   └── pfSense_Backups/
-│       └── pfSense_Backup_20250423133800.xml
-├── Ubuntu/
-│   ├── auth_log.txt
-│   ├── cron.log
-│   ├── kernel_log.txt
-│   ├── security_alerts.txt
-│   └── syslog.txt
-└── pfSense/
-    ├── Authentication_Log.txt
-    ├── DHCPD_log.txt
-    ├── Firewall_Log.txt
-    ├── OpenVPN_Log.txt
-    └── System_Log.txt
+├── Docs/
+│   ├── Firewall-Rules/
+│   │   └── vlan_firewall_rules.md
+│   ├── Remote-Access/
+│   │   └── openvpn_setup.md
+│   ├── VLAN-Setup/
+│   │   └── vlan_configuration.md
+│   └── pfSense-Setup/
+│       └── pfsense_initial_setup.md
 
-Scripts/
-├── backup_config.sh
-├── fetch_logs.sh
-└── parse_firewall_logs.py
+├── Logs/
+│   ├── Backups/
+│   │   ├── Ubuntu_Backups/
+│   │   │   └── backup_2025-04-23.tar.gz
+│   │   └── pfSense_Backups/
+│   │       └── pfSense_Backup_20250423133800.xml
+│   ├── Ubuntu/
+│   │   ├── auth_log.txt
+│   │   ├── cron.log
+│   │   ├── kernel_log.txt
+│   │   ├── security_alerts.txt
+│   │   └── syslog.txt
+│   └── pfSense/
+│       ├── Authentication_Log.txt
+│       ├── DHCPD_log.txt
+│       ├── Firewall_Log.txt
+│       ├── OpenVPN_Log.txt
+│       └── System_Log.txt
 
-README.md
-LICENSE
+├── Scripts/
+│   ├── backup_config.sh
+│   ├── fetch_logs.sh
+│   └── parse_firewall_logs.py
+
+├── README.md
+└── LICENSE
+
 ```
 
 ---
