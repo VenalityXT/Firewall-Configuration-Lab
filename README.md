@@ -1,30 +1,30 @@
 # pfSense Home Lab: Secure Network Simulation
 
-A virtualized, security-focused lab environment designed using **pfSense** to simulate enterprise-grade network segmentation, remote access, monitoring, and backup systems using only free tools in a virtualized environment.
+This repository contains the setup and configuration details of a **pfSense**-based home lab designed to simulate a segmented, secure enterprise network using virtualization. The lab leverages **pfSense** for firewall and routing, **OpenVPN** for remote access, and **Ubuntu** for client systems, alongside a range of monitoring and backup strategies.
 
-## 📚 Table of Contents
+## Table of Contents
 
-- [🧰 Project Overview](#-project-overview)
-  - [🔑 Key Components](#-key-components)
-- [🛠️ Network Lab Setup](#️-network-lab-setup)
-- [🌐 Network Layout](#-network-layout)
-- [🧩 VLAN Overview](#-vlan-overview)
-- [🔥 Firewall Philosophy](#-firewall-philosophy)
-- [🛡️ VPN Configuration (OpenVPN)](#️-vpn-configuration-openvpn)
-- [📊 Monitoring & Logging](#-monitoring--logging)
-- [💾 Backup Strategy](#-backup-strategy)
-- [🔐 Security Best Practices](#-security-best-practices)
-- [📂 Repo Structure](#-repo-structure)
-- [🔎 Why This Lab?](#-why-this-lab)
-- [📝 License](#-license)
+- [Project Overview](#project-overview)
+- [Key Components](#key-components)
+- [Network Lab Setup](#network-lab-setup)
+- [Network Layout](#network-layout)
+- [VLAN Overview](#vlan-overview)
+- [Firewall Philosophy](#firewall-philosophy)
+- [VPN Configuration (OpenVPN)](#vpn-configuration-openvpn)
+- [Monitoring & Logging](#monitoring--logging)
+- [Backup Strategy](#backup-strategy)
+- [Security Best Practices](#security-best-practices)
+- [Repo Structure](#repo-structure)
+- [Recommendations for Future Enhancements](#recommendations-for-future-enhancements)
+- [License](#license)
 
 ---
 
-## 🧰 Project Overview
+## Project Overview
 
-This lab project creates a fully virtual network using **pfSense** and **Ubuntu** clients to simulate segmented, secure enterprise networks with real-world policies and tooling.
+This lab project simulates a segmented, secure enterprise network with the help of **pfSense** and **Ubuntu** clients. The goal is to provide a real-world example of how to implement network segmentation, secure remote access, monitoring, and backup systems in a virtualized environment using only open-source tools.
 
-### 🔑 Key Components
+### Key Components
 
 - **Firewall**: pfSense CE
 - **Virtualization**: VirtualBox
@@ -37,7 +37,7 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 ---
 
-## 🛠️ Network Lab Setup
+## Network Lab Setup
 
 1. **Install VirtualBox** and set up a virtual network using internal adapters.
 2. **Install pfSense CE** with 2 interfaces: WAN (DHCP), LAN (10.10.10.1/24).
@@ -51,12 +51,12 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 ---
 
-## 🌐 Network Layout
-![Network Diagram](https://github.com/user-attachments/assets/c3a850a0-6082-4874-9cde-dad1f822edb9)
+## Network Layout
+[Insert Network Diagram Here]
 
 ---
 
-## 🧩 VLAN Overview
+## VLAN Overview
 
 | VLAN  | Name        | Purpose                      | Subnet         |
 |-------|-------------|------------------------------|----------------|
@@ -67,7 +67,7 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 ---
 
-## 🔥 Firewall Philosophy
+## Firewall Philosophy
 
 - **Default deny** on all VLANs
 - **Allow minimal egress** (DNS, HTTP/HTTPS)
@@ -77,7 +77,7 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 ---
 
-## 🛡️ VPN Configuration (OpenVPN)
+## VPN Configuration (OpenVPN)
 
 - **Mode**: Remote Access (SSL/TLS + User Auth)
 - **Tunnel Network**: 10.100.0.0/24
@@ -91,18 +91,18 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 ---
 
-## 📊 Monitoring & Logging
+## Monitoring & Logging
 
-- SNMP on pfSense:
+- **SNMP on pfSense**:
   - Port: 161
   - Community: MySecureROComm_2025
   - Modules: pf, host resources, ucd, netgraph
-- Logs stored in pfSense WebGUI
-- Optional remote syslog or email alerts
+- **Logs stored in pfSense WebGUI**
+- **Optional**: Remote syslog or email alerts
 
 ---
 
-## 💾 Backup Strategy
+## Backup Strategy
 
 - **Cron job** pulls pfSense config XML nightly
 - Uses `curl` with API key/token (or creds)
@@ -112,7 +112,7 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 ---
 
-## 🔐 Security Best Practices
+## Security Best Practices
 
 - Block private/reserved IPs on WAN
 - No unnecessary services running
@@ -124,5 +124,51 @@ This lab project creates a fully virtual network using **pfSense** and **Ubuntu*
 
 ---
 
-## 📂 Repo Structure
+## Repo Structure
+```
+Configs
+    ├── config-fw-core1.corp.internal-20250423142917.xml
+    └── openvpn.config
+Docs
+    ├── Firewall-Rules
+    ├── Remote-Access
+    ├── VLAN-Setup
+    └── pfSense-Setup
+Logs
+    ├── Backups
+    │   ├── Ubuntu_Backups
+    │   │   └── backup_2025-04-23.tar.gz
+    │   └── pfSense_Backups
+    │       └── pfSense_Backup_20250423133800.xml
+    ├── Ubuntu
+    │   ├── auth_log.txt
+    │   ├── cron.log
+    │   ├── kernel_log.txt
+    │   ├── security_alerts.txt
+    │   └── syslog.txt
+    └── pfSense
+        ├── Authentication_Log.txt
+        ├── DHCPD_log.txt
+        ├── Firewall_Log.txt
+        ├── OpenVPN_Log.txt
+        └── System_Log.txt
+Scripts
+README.md
+```
+
+---
+
+## Recommendations for Future Enhancements
+
+- **Increase Automation**: Incorporate more automated monitoring, alerting, and response tools. Consider leveraging **Ansible** or similar for automating configuration changes and updates.
+- **Improve Redundancy**: Set up high availability (HA) for pfSense to ensure network uptime and fault tolerance in case of failure.
+- **Expand Monitoring Capabilities**: Integrate with **SIEM systems** such as **Splunk** for enhanced data collection, analysis, and alerting on security events.
+- **Integrate Threat Intelligence Feeds**: Add dynamic threat intelligence data to pfSense and VPN configurations to better detect and block emerging threats.
+- **Periodic Backup Testing**: Regularly test backup and recovery processes to ensure data integrity and recoverability in case of a failure or attack.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
