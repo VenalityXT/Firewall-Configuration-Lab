@@ -27,7 +27,7 @@ This repository contains the setup and configuration details of a **pfSense**-ba
 
 This lab project simulates a segmented, secure enterprise network with the help of **pfSense** and **Ubuntu** clients. The goal is to provide a real-world example of how to implement network segmentation, secure remote access, monitoring, and backup systems in a virtualized environment using only open-source tools.
 
-[Insert Image of Virtual Network Layout Here]  
+![Sc](https://github.com/user-attachments/assets/11356118-6725-4c0e-a264-089495d30fba)
 
 ---
 
