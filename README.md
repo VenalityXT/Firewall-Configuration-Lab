@@ -27,8 +27,6 @@ This repository contains the setup and configuration details of a **pfSense**-ba
 
 This lab project simulates a segmented, secure enterprise network with the help of **pfSense** and **Ubuntu** clients. The goal is to provide a real-world example of how to implement network segmentation, secure remote access, monitoring, and backup systems in a virtualized environment using only open-source tools.
 
-![Sc](https://github.com/user-attachments/assets/11356118-6725-4c0e-a264-089495d30fba)
-
 ---
 
 ## Technologies Used
@@ -61,7 +59,7 @@ This lab project simulates a segmented, secure enterprise network with the help 
 - **Automated nightly configuration backups** using a cron job and `curl` on Ubuntu, creating timestamped XML files to ensure rollback capability  
 - **Reduced misconfiguration risk by 80%** through structured firewall rule documentation and YAML-based config references in the Docs/ directory  
 
-[Insert Image of pfSense Firewall Rules Page or VLAN Interface Config Here]  
+![VLAN Creation](https://github.com/user-attachments/assets/dca54906-45c9-410a-ab77-26885b362dfd)
 
 ---
 
@@ -90,7 +88,7 @@ This lab project simulates a segmented, secure enterprise network with the help 
 ---
 
 ## Network Layout
-[Insert Network Diagram Image Here]  
+![Sc](https://github.com/user-attachments/assets/11356118-6725-4c0e-a264-089495d30fba)
 
 ---
 
@@ -147,7 +145,8 @@ This lab project simulates a segmented, secure enterprise network with the help 
 - Saves backups with timestamp to Ubuntu:
   - `/home/user/pfsense_backups/`
 - Easy rollback via WebGUI
-
+![BackupScript](https://github.com/user-attachments/assets/8c21f50e-1e80-4854-8961-ab2fd99eeeab)
+![curlrun](https://github.com/user-attachments/assets/152befde-36a5-4524-801d-7e9098c7bd9d)
 ---
 
 ## Security Best Practices
