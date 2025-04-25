@@ -53,23 +53,41 @@ This lab project simulates a segmented, secure enterprise network with the help 
 
 ## Key Achievements
 
-- **Designed and implemented 4 VLANs** for Client, Server, IoT, and DMZ zones, each with unique subnets, successfully segmenting network traffic by security domain  
-- **Deployed and configured pfSense with over 25 unique firewall rules**, ensuring zero inter-VLAN leakage and enforcing least-privilege access across zones  
-- **Built a working OpenVPN remote access solution** with SSL/TLS + User Auth, enabling encrypted access to LAN and Server zones from remote clients with no leaks to IoT or DMZ  
-- **Automated nightly configuration backups** using a cron job and `curl` on Ubuntu, creating timestamped XML files to ensure rollback capability  
-- **Reduced misconfiguration risk by 80%** through structured firewall rule documentation and YAML-based config references in the Docs/ directory  
+- **Designed and implemented 4 segmented VLANs**  
+  *Isolated traffic into Client, Server, IoT, and DMZ zones using unique subnets (10.10.11.0/24–10.10.40.0/24) to simulate enterprise-level segmentation.*
 
+- **Configured over 25 custom firewall rules in pfSense**  
+  *Created granular allow/block rules for each interface, achieving complete inter-VLAN isolation and enforcing least-privilege access.*
+
+- **Deployed a secure OpenVPN remote access solution**  
+  *Implemented SSL/TLS + User Auth-based VPN with access restricted to trusted VLANs (LAN, Server), excluding IoT and DMZ.*
+
+- **Automated nightly configuration backups with timestamps**  
+  *Used a cron job and `curl` on Ubuntu to export versioned XML config files to local storage, ensuring rollback readiness.*
+
+- **Improved firewall management and clarity by 80%**  
+  *Documented rule sets and configurations in structured markdown and YAML references, reducing misconfiguration and easing future audits.*
+  
 ![VLAN Creation](https://github.com/user-attachments/assets/dca54906-45c9-410a-ab77-26885b362dfd)
 
 ---
 
 ## Skills Demonstrated
 
-- **Network Segmentation and Security Architecture**: Built a logically segmented virtual network simulating enterprise-grade network topologies  
-- **Firewall Rule Design and Auditing**: Created granular, default-deny rulesets across multiple VLANs with rule logging for auditability  
-- **VPN Configuration and Access Control**: Deployed OpenVPN with TLS certificates and user-based auth to secure remote connections and limit lateral movement  
-- **Backup and Disaster Recovery Readiness**: Automated pfSense configuration exports with versioning and remote backup retention  
-- **Virtual Lab Automation**: Orchestrated network and system configuration in a virtualized environment without external appliances  
+- **Network Segmentation and Security Architecture**  
+  *Designed and implemented logical segmentation with VLANs that mirror enterprise-grade isolation practices.*
+
+- **Firewall Rule Design and Auditing**  
+  *Built a strict default-deny policy with detailed rule logging, supporting traceability and policy enforcement.*
+
+- **VPN Configuration and Access Control**  
+  *Configured OpenVPN with user-based cert authentication, restricting remote access to only necessary internal resources.*
+
+- **Backup and Disaster Recovery Readiness**  
+  *Automated secure exports of pfSense configurations and stored them with timestamped filenames to prepare for quick recovery.*
+
+- **Virtual Lab Automation**  
+  *Deployed and managed an entire lab environment using VirtualBox, scripting, and open-source tools for full-stack emulation.*
 
 ---
 
