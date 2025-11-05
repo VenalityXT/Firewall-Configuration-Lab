@@ -50,7 +50,3 @@ A detailed guide to implementing a **default-deny firewall strategy** in pfSense
 3. Use **Diagnostics > States** and **Logs** to validate traffic behavior.
 
 ---
-
-## Next Steps
-
-Proceed to [remote-access.md](./remote-access.md) to set up OpenVPN for secure external connectivity.
