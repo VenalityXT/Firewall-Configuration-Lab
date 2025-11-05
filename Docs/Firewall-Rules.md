@@ -43,11 +43,6 @@ A detailed guide to implementing a **default-deny firewall strategy** in pfSense
 
 ---
 
-### VPN Access
-[Insert Image]
-
----
-
 ## Test Each Rule Set
 
 1. Attempt ping or HTTP request from each VLAN to another.
